@@ -1,0 +1,696 @@
+:root {
+    --primario: #00b4c9;
+    --secundario: #ff7622;
+    --terciario: #fcc54c;
+    --cuarteario: #ef271f;
+    --blanco: #FFF;
+    --gris: #767474;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.formato1 {
+    color: var(--primario);
+    font-size: 6rem;
+    margin-bottom: 10px;
+}
+
+/* Navegacion Principal */
+header {
+    position: fixed;
+    z-index: 100;
+    width: 99%;
+}
+
+.nav-bg {
+    position: relative;
+    top: -19px;
+    background-color: var(--primario);
+    box-shadow: 0px 5px 15px 0px rgba(166, 164, 166, 1);
+    border-radius: 1rem;
+}
+
+.navegadorPrincipal {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navegadorPrincipal a {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.navegadorPrincipal a:hover {
+    border-radius: 1rem;
+    background-color: var(--secundario);
+    color: black;
+}
+
+/* Inicio */
+.fondo {
+    background-image: url(../img/images1/base-inicio.jpg);
+    /* Hacemos que la imagen no se repita */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 690px;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.sombra {
+    margin-top: 19px;
+    box-shadow: 0px 5px 15px 0px rgba(166, 164, 166, 1);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Centrando contenido */
+.contenido {
+    margin-left: 10px;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+}
+
+.titulo {
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+
+.info {
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+
+.info span {
+    font-weight: 500;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    flex-direction: column;
+}
+
+.button1,
+.button2 {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: .5rem 2rem;
+
+    text-decoration: none;
+    border-radius: 15rem;
+    width: 40%;
+    text-align: center;
+    border: none;
+}
+
+.button1 {
+    margin: 2rem 0;
+}
+
+.button2 {
+    background-color: var(--primario);
+}
+
+
+.iconocorn {
+    width: 20px;
+}
+
+/* SECCION 2 */
+.fondo2 {
+    margin: 2rem 0;
+    background-image: url(../img/images1/base-maiz.jpg);
+    /* Hacemos que la imagen no se repita */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 690px;
+    position: relative;
+    margin-bottom: 8%;
+    border-radius: 1rem;
+}
+
+.fondowhite {
+    position: absolute;
+    background-color: var(--blanco);
+    margin-left: 10px;
+}
+
+.formato2 {
+    color: var(--primario);
+    font-size: 3rem;
+    width: 50%;
+    line-height: 3rem;
+}
+
+.cajas {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Creamos separaciones entre las columnas */
+
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.cajas img {
+    padding-top: 2rem;
+    width: 15rem;
+    align-items: center;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primario);
+    border-radius: 10%;
+    width: 18rem;
+    height: 20rem;
+    border: 2px solid var(--secundario);
+}
+
+.caja span {
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.caja a {
+    background-color: var(--terciario);
+    color: var(--blanco);
+    margin: 5px 0;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    border-radius: 15rem;
+    border: 1px solid var(--secundario);
+}
+
+.caja a:hover {
+    background-color: var(--secundario);
+    color: black;
+}
+
+.footerEmprende {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.iconosEmprende {
+    margin-top: 20px;
+    margin-right: 0;
+}
+
+.footerEmprende p {
+    font-weight: 300;
+    width: 15%;
+}
+
+.footerEmprende span {
+    font-weight: 400;
+}
+
+/* Seccion Proposito */
+/* Fondo */
+.proposito {
+    background-image: url(../img/images1/base-azul.jpg);
+    height: 690px;
+    border-radius: 1rem;
+}
+
+.proposito h2 {
+    color: var(--blanco);
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.contenidoProposito {
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Creamos separacion entre columnas */
+    column-gap: 1rem;
+    position: relative;
+}
+
+.contenidoNP p {
+    margin-top: 5rem;
+    color: var(--blanco);
+    font-weight: 300;
+    font-size: 20px;
+    width: 550px;
+}
+
+.contenidoNP span {
+    font-weight: 500;
+}
+
+.contenidoNP h3 {
+    font-weight: 500;
+    font-size: 50px;
+    color: var(--blanco);
+
+}
+
+.contenidoNP a {
+    background-color: var(--terciario);
+    color: var(--blanco);
+    margin: 5px 0;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    border-radius: 15rem;
+    border: 1px solid var(--blanco);
+    font-weight: 700;
+}
+
+.contenidoNP a:hover {
+    background-color: var(--secundario);
+    color: black;
+}
+
+/* Imagen proposito */
+
+.propositoIMG img {
+    width: 410px;
+    height: 410px;
+}
+
+/* Seccion 4 */
+.sabor-ingredientes {
+    background-image: url(../img/images1/base-productos.jpg);
+    /* Hacemos que la imagen no se repita */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 790px;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.sabor-ingredientes h2 {
+    color: var(--blanco);
+    font-weight: 800;
+    font-size: 4rem;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.sabor-ingredientes span {
+    text-transform: uppercase;
+}
+
+.conteindo-ingredientes {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    width: 500px;
+    height: 250px;
+    margin-left: 40rem;
+    padding-bottom: 2rem;
+}
+
+.conteindo-ingredientes h3 {
+    margin-left: 2rem;
+    color: var(--primario);
+    font-weight: 800;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.conteindo-ingredientes ul {
+    margin-top: 2px;
+    margin-bottom: 2rem;
+}
+
+.conteindo-ingredientes a {
+    background-color: var(--primario);
+    color: var(--blanco);
+    margin: 5px 2rem;
+    padding: .5rem 2rem;
+    text-decoration: none;
+    border-radius: 15rem;
+    border: 2px solid var(--blanco);
+    font-weight: 700;
+
+}
+
+.footer-ingredientes {
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 4rem auto;
+    width: 750px;
+
+}
+
+.footer-ingredientes img {
+
+    width: 750px;
+
+}
+
+.contenedorDistr {
+    margin: 20% auto;
+}
+
+.distribuidor {
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 60rem;
+}
+
+.tituloDistribuidor {
+    text-align: center;
+}
+
+.tituloDistribuidor h2 {
+    color: var(--primario);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.tituloDistribuidor span {
+    font-size: 2rem;
+}
+
+.encabezados {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado h3 {
+    color: var(--secundario);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.encabezado p {
+    line-height: 2;
+    text-align: center;
+}
+
+.encabezado span {
+    font-weight: 500;
+}
+
+.encabezado .iconos {
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Paquetes */
+.paquetes {
+    background-image: url(../img/images1/base-azul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 1rem;
+    text-align: center;
+    height: auto;
+    padding-bottom: 10px;
+
+}
+
+.paquetes h2 {
+    color: var(--blanco);
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.paquetesBox {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+}
+
+.paquete {
+    background-color: var(--blanco);
+    border-top: 6rem solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.paquete img {
+    width: 250px;
+}
+
+.borderRojo {
+    color: var(--blanco);
+    position: absolute;
+    top: -100px;
+    line-height: 9px;
+}
+
+.borderRojo h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.borderRojo span {
+    font-weight: 300;
+}
+
+.cuerpo h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+
+.precioanterior {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: var(--gris);
+    margin-bottom: -30px;
+}
+
+.precioactual {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.masVendido {
+    color: var(--cuarteario);
+}
+
+.datosizq {
+    text-align: left;
+    position: relative;
+    margin-left: 5px;
+}
+
+
+.fontdatosizq p {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.bono {
+    color: var(--cuarteario);
+    margin: 0 auto;
+    width: 200px;
+}
+
+.kueskipay {
+    width: 190px;
+}
+
+/* Metodo de pago */
+.metododepay {
+    font-weight: 200;
+}
+
+.metododepay span {
+    font-weight: 400;
+}
+
+/* Boton */
+.invertirahora {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    margin: 5px 2rem;
+    padding: .5rem 3rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    border: 2px solid var(--primario);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.invertirahora:hover {
+    background-color: var(--primario);
+    color: black;
+    border: 2px solid var(--secundario);
+}
+
+.invertirahora svg {
+    transform: rotate(90deg);
+    position: absolute;
+    width: 2rem;
+    left: 0;
+    top: 0;
+    margin-left: 15px;
+
+}
+
+.paquetes .footerimgpaquete {
+    margin: 2rem 0;
+    width: 200px;
+}
+
+/* Formulario */
+.fondoContactanos {
+    background-image: url(../img/images1/cuarto-circulo.jpg);
+    /* Hacemos que la imagen no se repita */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 1rem;
+
+}
+
+.contactanos h2 {
+    font-size: 50px;
+    color: var(--terciario);
+    margin-bottom: 0;
+}
+
+.contactanos p {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.formulario {
+    background-color: var(--primario);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid var(--terciario);
+    width: 70%;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+}
+
+/* Modificando los inputs */
+.campo {
+    margin-bottom: 1rem;
+}
+
+/* El numero que tenemos dentro del primer child selecciona la clase que tenemos en esa posicion */
+.campo:nth-child(5),
+.campo:nth-child(7),
+.campo:nth-child(8) {
+    /* Para posicionar un elemento utilizamos grid_column */
+    grid-column: 1 / 3;
+    /* Entonces va de la 1 a la 3 */
+}
+
+
+.campo input,
+textarea {
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.campo input {
+    height: 50px;
+
+}
+
+/* Configuramos el cuadro del input */
+.input-text {
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--terciario);
+    opacity: 1;
+    /* Firefox */
+}
+
+.campo textarea {
+    height: 15rem;
+}
+
+.botonform {
+    background-color: var(--terciario);
+    color: var(--blanco);
+    /* Separacion entre los elementos y el boton */
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: .5rem;
+
+    /* Poner las letras en mayusculas */
+    text-transform: uppercase;
+
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    border: none;
+    pointer-events: visible;
+}
+
+.botonform:hover {
+    cursor: pointer;
+}
+
+.capcha {
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.red svg {
+    cursor: pointer;
+}

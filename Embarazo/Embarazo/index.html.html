@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link rel="personal" href="css/slide.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/ventana.css">
+    <link rel="stylesheet" href="css/mitos.css">
+    <link rel="stylesheet" href="css/estilotabs.css">
+
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+    <title>EMAD</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bg">
+            <nav class="navegadorPrincipal">
+                <a href="#">Semana de la salud</a>
+                <a href="#">Clinicas</a>
+                <a href="#">Prevencion</a>
+                <a href="#especialistas">Especialistas</a>
+
+            </nav>
+        </div>
+    </header>
+    <section class="sombra">
+        <article>
+            <!-- Inicio Sabias que -->
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="img/S1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/S2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/S3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/S4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- automatic navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                <!-- Manual navigation -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+            <!-- Especialistas -->
+            <section>
+                <div class="fondo2">
+                    <div class="textoCajas">
+                        <!-- Titulo -->
+                        <div class="tituloS2">
+                            <h2 class="formato2">¿Sabias que?</h2>
+                        </div>
+                        <div class="cajas">
+                            <section class="caja">
+                                <a href="#especialistas" id="open1"><img src="img/Iconos/pastillas.png"
+                                        alt="Paquetes"></a>
+                            </section>
+                            <section class="caja">
+                                <a href="#especialistas" id="open2"><img src="img/Iconos/icons8-condón-96.png"
+                                        alt="Paquetes"></a>
+                            </section>
+                            <section class="caja">
+                                <a href="#especialistas" id="open3"><img src="img/Iconos/calendario.png"
+                                        alt="Paquetes"></a>
+                            </section>
+                            <section class="caja">
+                                <a href="#especialistas" id="open4"><img src="img/Iconos/anillo.png" alt="Paquetes"></a>
+                            </section>
+                            <section class="caja">
+                                <a href="#especialistas" id="open5"><img src="img/Iconos/diu.png" alt="Paquetes"></a>
+                            </section>
+                            <section class="caja">
+                                <a href="#especialistas" id="open6"><img src="img/Iconos/inyeccion.png"
+                                        alt="Paquetes"></a>
+                            </section>
+                            <section class="caja">
+                                <a href="#especialistas" id="open7"><img src="img/Iconos/ligaduras.png"
+                                        alt="Paquetes"></a>
+                            </section>
+                            <section class="caja">
+                                <a href="#especialistas" id="open8"><img src="img/Iconos/implante.png"
+                                        alt="Paquetes"></a>
+                            </section>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- Ventana emergente -->
+
+            <div class="modal-container" id="modal_container1">
+                <div class="modal">
+                    <h1>Pastillas</h1>
+                    <p>Las pastillas anticonceptivas, comúnmente conocidas como píldoras anticonceptivas, son un método
+                        anticonceptivo hormonal ampliamente utilizado por las mujeres. Aquí tienes una descripción sobre
+                        las pastillas anticonceptivas:
+                        <br><br>
+                        <span>Función:</span> Las pastillas anticonceptivas contienen hormonas sintéticas, como
+                        estrógeno y
+                        progestina, o solo progestina. Estas hormonas actúan de manera similar a las hormonas naturales
+                        en el cuerpo de una mujer y trabajan juntas para prevenir el embarazo de varias maneras.
+
+                        <br><br>
+                        <span>Mecanismo de acción:</span> Las pastillas anticonceptivas suprimen la ovulación, lo que
+                        significa que
+                        evitan que los ovarios liberen óvulos maduros. También espesan el moco cervical, lo que
+                        dificulta el paso de los espermatozoides hacia el útero. Además, alteran el revestimiento del
+                        útero, lo que dificulta la implantación de un óvulo fertilizado.
+                    </p>
+                    <button id="close1">Cerrar</button>
+                </div>
+            </div>
+            <div class="modal-container" id="modal_container2">
+                <div class="modal">
+                    <h1>Condones</h1>
+                    <p>Un condón es un dispositivo de barrera diseñado para ser utilizado durante las relaciones
+                        sexuales. Suele estar hecho de látex, aunque también hay condones de poliuretano o poliisopreno.
+                        Consiste en una funda delgada y elástica que se coloca sobre el pene erecto o dentro de la
+                        vagina antes de la penetración.
+                        <br>
+                        <br>
+                        Los <span>condones</span> vienen en diferentes tamaños y formas para adaptarse a diferentes
+                        cuerpos y
+                        preferencias. Por lo general, tienen un extremo con forma de depósito en el cual se acumula el
+                        semen durante la eyaculación. Esto ayuda a prevenir que el semen se derrame o se escape.
+                    </p>
+                    <button id="close2">Cerrar</button>
+                </div>
+            </div>
+            <div class="modal-container" id="modal_container3">
+                <div class="modal">
+                    <h1>Calendario</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum pulvinar sem eu
+                        venenatis. Proin interdum sagittis elit, ut viverra sapien maximus a. Suspendisse at quam
+                        pulvinar, condimentum tellus eu, ultrices metus. Donec bibendum ut risus sed fringilla. Sed vel
+                        erat massa. Vivamus maximus scelerisque diam non faucibus. Mauris scelerisque ornare vestibulum.
+                        Quisque lobortis, magna eu commodo vehicula, erat nunc cursus nibh, at sagittis turpis massa et
+                        nulla.</p>
+                    <button id="close3">Cerrar</button>
+                </div>
+            </div>
+            <div class="modal-container" id="modal_container4">
+                <div class="modal">
+                    <h1>Anillo</h1>
+                    <p>Sabías que el anillo anticonceptivo es un método contraceptivo hormonal que ha ganado popularidad
+                        en los últimos años debido a su conveniencia y eficacia.
+                        <br><br><br>
+                        El anillo anticonceptivo es un pequeño dispositivo de plástico flexible que se inserta en la
+                        vagina y libera continuamente dos hormonas: estrógeno y progestina. Estas hormonas trabajan
+                        juntas para prevenir la ovulación, espesar el moco cervical para dificultar el paso de los
+                        espermatozoides hacia el útero y adelgazar el revestimiento uterino, lo que hace menos probable
+                        que un óvulo fertilizado se implante.
+                        <br><br><br>
+                        <span>Aquí está el dato interesante:</span> A diferencia de otros métodos anticonceptivos
+                        hormonales que se
+                        deben tomar diariamente o recibir inyecciones periódicas, el anillo anticonceptivo se utiliza de
+                        forma mensual. Se coloca en la vagina y se deja allí durante tres semanas seguidas, luego se
+                        retira durante una semana para permitir la menstruación, y finalmente se inserta un nuevo anillo
+                        para iniciar un nuevo ciclo.
+                    </p>
+                    <button id="close4">Cerrar</button>
+                </div>
+            </div>
+            <div class="modal-container" id="modal_container5">
+                <div class="modal">
+                    <h1>Diu</h1>
+                    <p>Sabías que el <span>DIU</span> es uno de los métodos anticonceptivos más eficaces y de larga
+                        duración
+                        disponibles en la actualidad?
+                        <br><br>
+                        El <span>DIU</span> es un pequeño dispositivo en forma de T que se coloca dentro del útero para
+                        prevenir el
+                        embarazo. Hay dos tipos principales de <span>DIU</span>: el <span>DIU</span> de cobre y el
+                        <span>DIU</span> hormonal.
+                        <br><br>
+                        El <span>DIU</span> de cobre está fabricado con cobre y actúa liberando iones de cobre en el
+                        útero, lo cual
+                        crea un ambiente tóxico para los espermatozoides, evitando así la fertilización. Además, el
+                        cobre también puede afectar la movilidad del óvulo y del espermatozoide.
+                        <br><br>
+                        Por otro lado, el <span>DIU</span> hormonal libera una pequeña cantidad de progestina, una
+                        hormona similar a
+                        la progesterona, directamente en el útero. Esta hormona espesa el moco cervical, dificultando el
+                        paso de los espermatozoides, y adelgaza el revestimiento uterino, lo que reduce las
+                        posibilidades de implantación de un óvulo fertilizado.
+                    </p>
+                    <button id="close5">Cerrar</button>
+                </div>
+            </div>
+            <div class="modal-container" id="modal_container6">
+                <div class="modal">
+                    <h1>Inyectables</h1>
+                    <p>Sabías que los anticonceptivos <span>inyectables</span> son una forma conveniente y altamente
+                        efectiva de
+                        control de la natalidad que ofrece protección prolongada contra el embarazo?
+                        <br><br>
+                        Los anticonceptivos <span>inyectables</span> son inyecciones hormonales que se administran en el
+                        músculo o
+                        debajo de la piel, liberando progestina (y en algunos casos también estrógeno) en el cuerpo para
+                        prevenir la ovulación, espesar el moco cervical y adelgazar el revestimiento uterino. Hay dos
+                        <span>tipos principales de anticonceptivos inyectables:</span> la inyección mensual y la
+                        inyección
+                        trimestral.
+                        <br><br>
+                        <span>Aquí está el dato interesante:</span> La inyección mensual, también conocida como
+                        "inyección
+                        anticonceptiva combinada", contiene tanto estrógeno como progestina, y se administra una vez al
+                        mes. Por otro lado, la inyección trimestral, también conocida como "inyección anticonceptiva
+                        solo con progestina", contiene solo progestina y se administra una vez cada tres meses.
+                    </p>
+                    <button id="close6">Cerrar</button>
+                </div>
+            </div>
+            <div class="modal-container" id="modal_container7">
+                <div class="modal">
+                    <h1>Ligaduras</h1>
+                    <p>Sabías que la ligadura de trompas es un método anticonceptivo permanente y altamente efectivo que
+                        impide la fertilización al bloquear las trompas de Falopio, impidiendo el encuentro entre el
+                        óvulo y el espermatozoide?
+                        <br><br>
+                        La ligadura de trompas es un procedimiento quirúrgico en el que se cortan, atan o sellan las
+                        trompas de Falopio, impidiendo que los óvulos sean fertilizados y lleguen al útero. Es un método
+                        de esterilización permanente y se considera una opción anticonceptiva a largo plazo.
+                        <br><br>
+                        <span>Aquí está el dato interesante:</span> La ligadura de trompas es un método altamente
+                        efectivo en la
+                        prevención del embarazo. Se estima que tiene una tasa de efectividad superior al 99% en términos
+                        de evitar el embarazo a largo plazo. Sin embargo, es importante tener en cuenta que la ligadura
+                        de trompas no protege contra las infecciones de transmisión sexual (ITS).
+                    </p>
+                    <button id="close7">Cerrar</button>
+                </div>
+            </div>
+            <div class="modal-container" id="modal_container8">
+                <div class="modal">
+                    <h1>Implante</h1>
+                    <p>Sabías que el implante anticonceptivo es uno de los métodos anticonceptivos más discretos
+                        disponibles en la actualidad?
+                        <br><br>
+                        El implante anticonceptivo es un pequeño dispositivo flexible que se coloca debajo de la piel
+                        del brazo, generalmente en la parte interna del brazo superior. A diferencia de otros métodos
+                        anticonceptivos visibles, como los dispositivos intrauterinos (DIU) o los parches
+                        anticonceptivos, el implante es prácticamente invisible una vez colocado.
+                        <br><br>
+                        <span>Aquí está el dato interesante:</span> Debido a su ubicación debajo de la piel, el implante
+                        anticonceptivo no se ve a simple vista y no es fácilmente detectable. Esto brinda a las personas
+                        que lo utilizan una mayor discreción y privacidad en comparación con otros métodos
+                        anticonceptivos más visibles.
+                    </p>
+                    <button id="close8">Cerrar</button>
+                </div>
+            </div>
+            <script src="js/ventana.js"></script>
+
+            <!-- Curiosidades -->
+            <section class="curiosidades">
+                <div class="contenedorCuriosidades">
+                    <div class="tituloCuriosidades">
+                        <h2>curiosidades muy reales sobre las embarazadas</h2>
+                        <span>Aquí te mencionamos algunas curiosidades conforme avanzas en el embarazo:</span>
+                    </div>
+                    <div class="encabezados">
+                        <div class="encabezado">
+                            <h3>Les crecen los pies</h3>
+                            <div class="iconos">
+                                <img src="img/Iconos/pie.png" alt="">
+                            </div>
+
+                            <p>Es cierto. Debido al aumento de la laxitud y flexibilidad de los ligamentos y huesos
+                                durante el embarazo, el pie te puede aumentar hasta un número. Si te ocurre esto, puede
+                                que cuando tengas el bebé tus pies vuelvan a su longitud original, pero también es
+                                posible que te quedes para siempre con una talla más.</p>
+                        </div>
+                        <div class="encabezado">
+                            <h3>Linea alba</h3>
+                            <div class="iconos">
+                                <img src="img/Iconos/alba.png" alt="">
+                            </div>
+
+                            <p>Otra realidad. En el cuarto o quinto mes de embarazo es posible que te encuentres con una
+                                línea hiperpigmentada, de color oscuro, que va del abdomen al pubis. Es un fenómeno
+                                relacionado con el incremento de hormonas y desaparece espontáneamente tras el parto, al
+                                cabo de unos meses.
+                            </p>
+                        </div>
+                        <div class="encabezado">
+                            <h3>Aumento de miopia</h3>
+                            <div class="iconos">
+                                <img src="img/Iconos/miopia.png" alt="">
+                            </div>
+
+                            <p>También por culpa de las hormonas es posible que sufras una ligera pérdida de agudeza
+                                visual. Es momentáneo y con el tiempo todo vuelve a la normalidad, pero la miopía te
+                                puede llegar a subir hasta una dioptría.
+                                Por este motivo, si tienes pensado someterte a una cirugía refractiva es mejor esperar
+                                un año, hasta que la graduación se estabilice.
+
+                            </p>
+                        </div>
+                        <div class="encabezado">
+                            <h3>Gusto y Olfato</h3>
+                            <div class="iconos">
+                                <img src="img/Iconos/nariz.png" alt="">
+                            </div>
+
+                            <p>Es posible que te hayan comentado que durante el embarazo te vas a volver más sensible a
+                                determinados gustos y olores. Puedes creértelo, el motivo vuelve a ser los efectos de
+                                las hormonas y se piensa que se trata de un mecanismo de defensa del organismo para
+                                protegerse de sustancias que podrían ser perjudiciales para la madre o el bebé. Esta
+                                hipersensibilidad puede ser uno de los primeros síntomas del embarazo.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mitos -->
+            <div class="mitos">
+                <div class="fondoMitos">
+                    <div class="faq-container">
+                        <h2>Falsos mitos del embarazo</h2>
+                        <details>
+                            <summary>1. La forma de la tripa indica el sexo del bebé</summary>
+                            <p>Esto se oye mucho, pero es totalmente falso. La forma del vientre está relacionada con el
+                                tono muscular, esquelético y uterino de la madre y con la forma que adopte el bebé en el
+                                interior, pero no tiene nada que ver con su sexo ni ninguna otra característica.</p>
+                        </details>
+
+                        <details>
+                            <summary>2. Si la madre tiene ardores, el bebé nacerá con mucho pelo</summary>
+                            <p>Otra falsedad. Los ardores son una de las molestias típicas del embarazo y pueden
+                                aliviarse evitando los picantes y las comidas copiosas y pesadas, pero no tienen nada
+                                que ver con las características físicas del niño o niña.</p>
+                        </details>
+
+                        <details>
+                            <summary>3. Hay que comer por dos</summary>
+                            <p>Si bien es cierto que tus necesidades nutricionales cambian durante el embarazo y debes
+                                llevar una dieta sana y saludable, no se trata de atiborrarte de comida. Es más, sumar
+                                más kilos de los recomendables durante el embarazo pueden provocar problemas de salud a
+                                la madre y el bebé.</p>
+                        </details>
+
+                        <details>
+                            <summary>4. No se pueden tener relaciones sexuales</summary>
+                            <p>Si te apetece puedes tener relaciones sexuales sin temor a que el bebé pueda sufrir daños
+                                algunos, ya que cuenta con una triple barrera protectora: el útero, el tapón mucoso y el
+                                líquido amniótico.</p>
+                        </details>
+
+                        <details>
+                            <summary>5. Está prohibido teñirse el pelo</summary>
+                            <p>Puedes teñirte el pelo, aunque debes tener cuidado con los componentes del tinte que
+                                utilices, comprobando que no contengan acetato de plomo, amoniaco y otros derivados del
+                                petróleo (la ley obliga a que esta información aparezca en la etiqueta).</p>
+                        </details>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Curiosidades semanales -->
+            <div class="curiosidadesSem">
+                <div class="fondoCuriosidadesSem">
+                    <h1>Curiosidades durante las semanas de gestacion</h1>
+                    <div class="general">
+                        <div class="general-1">
+                            <h2>Semana 6</h2>
+                            <p>En la semana 6 ya se puede escuchar el latido del corazón.</p>
+                        </div>
+                        <div class="general-2"></div>
+                    </div>
+
+                    <div class="general">
+                        <div class="general-3"></div>
+                        <div class="general-4">
+                            <h2>Semana 8</h2>
+                            <p>En la semana 8 la progesterona pasa de ser secretada por el ovario a ser secretada por la
+                                placenta, por ello hay riesgo de padecer un aborto espontáneo.</p>
+                        </div>
+                    </div>
+                    <div class="general">
+                        <div class="general-5">
+                            <h2>Semana 10 - 12</h2>
+                            <p>La semana 10-12 es el periodo de diferenciación sexual. Es muy importante que durante
+                                todo el primer trimestre de gestación y el principio del segundo trimestre las mujeres
+                                no estén en contacto con disruptores endocrinos, ni consuman medicación. Esto puede
+                                provocar en los niños riesgo de testículos ectópicos y en las niñas útero cerrados</p>
+                        </div>
+                        <div class="general-6"></div>
+                    </div>
+                    <div class="general">
+                        <div class="general-7"></div>
+                        <div class="general-8">
+                            <h2>Semana 12</h2>
+                            <p>El bebé en la semana 12 se chupa el dedo y traga líquido amniótico, lo digiere y por
+                                supuesto lo expulsa en forma de orina. El pipí que «fabrica» el bebé retorna de nuevo al
+                                líquido amniótico, creándose un “circuito cerrado” perfecto.
+                                Durante el primer trimestre el útero se mantiene a nivel intrapélvico, por esta razón la
+                                vejiga se puede ver comprimida y la mujer necesita orinar frecuentemente.
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="general">
+                        <div class="general-9">
+                            <h2>Semana 16</h2>
+                            <p>En la semana 16 la mujer puede empezar a notar los movimientos del bebé.
+                                Durante el sexto mes del trabajo el estómago pasa de una posición vertical a una
+                                orientación horizontal pudiendo tener la mujer sensación de reflujo.
+
+                            </p>
+                        </div>
+                        <div class="general-10"></div>
+                    </div>
+
+                    <div class="general">
+                        <div class="general-11"></div>
+                        <div class="general-12">
+                            <h2>Semana 26</h2>
+                            <p>En la semana 26 es cuando el bebé se coloca en posición cefálica.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="general">
+                        <div class="general-13">
+                            <h2>Semana 35</h2>
+                            <p>En la semana 35, si en la tercera ECO el bebé no está cefálico, podemos ayudarle a
+                                girarse hasta esta semana. Es cuando programa las versiones médicas.
+                            </p>
+                        </div>
+                        <div class="general-14"></div>
+                    </div>
+                    <div class="general">
+                        <div class="general-15"></div>
+                        <div class="general-16">
+                            <h2>Semana 37</h2>
+                            <p>En la semana 37 el bebé ya está a término.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Curiosidadse de los sentidos de bebes -->
+                <section class="Cbebes">
+                    <div class="fondoBebes">
+                        <h1>¿Cómo se desarrollan los sentidos?</h1>
+                        <div class="tabs">
+                            <div class="tab-container">
+                                <div id="tab1" class="tab">
+                                    <a href="#tab1">Mes 3</a>
+                                    <div class="tab-content">
+                                        <h2>Tercer Mes</h2>
+                                        <p>El primer sentido que se desarrolla es el tacto en el tercer mes. Los
+                                            primeros receptores táctiles que se desarrollan son a nivel de boca, manos y
+                                            pies. Es donde recibirá las primeras sensaciones sensitivas, a través de las
+                                            ondas del líquido amniótico.</p>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="tab">
+                                    <a href="#tab2">Mes 4</a>
+                                    <div class="tab-content">
+                                        <h2>Mes 4</h2>
+                                        <p>El cuarto mes se desarrollan el olfato y el gusto.</p>
+                                    </div>
+                                </div>
+                                <div id="tab3" class="tab">
+                                    <a href="#tab3">Semana 23</a>
+                                    <div class="tab-content">
+                                        <h2>Semana 23</h2>
+                                        <p>En la semana 23 de amenorrea se desarrolla el sentido del equilibrio</p>
+                                    </div>
+                                </div>
+                                <div id="tab4" class="tab">
+                                    <a href="#tab4">Mes 5</a>
+                                    <div class="tab-content">
+                                        <h2>Mes 5</h2>
+                                        <p>En el quinto mes se desarrolla la audición a través del frontal. No se hace
+                                            por vía de las orejas, porque estarán llenas de agua. Sino que se hará mucho
+                                            a través del hueso frontal.</p>
+                                    </div>
+                                </div>
+                                <div id="tab5" class="tab">
+                                    <a href="#tab5">Mes 7</a>
+                                    <div class="tab-content">
+                                        <h2>Mes 7</h2>
+                                        <p>El séptimo mes la visión.</p>
+                                    </div>
+                                </div>
+                                <div id="tab6" class="tab">
+                                    <a href="#tab6">Semana 34</a>
+                                    <div class="tab-content">
+                                        <h2>Semana 34</h2>
+                                        <p>En la semana 34 de amenorrea se desarrolla el reflejo de succión. El primer
+                                            movimiento activo del bebé dentro de la barriga será de la mandíbula. Un
+                                            bebé cuando nace, no es capaz de desplazarse, pero sí que tiene toda la
+                                            musculatura de la cara desarrollada para demostrar las emociones y así poder
+                                            comunicarse con sus padres des del principio.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="footer sombra">
+                    <p>Jesus Ivan Perez del Angel</p>
+                    <p>Estefaia Perez Guzman</p>
+                    <p>Antonio Garcias Moran</p>
+                </footer>
+                <script src="js/slide.js"></script>
+</body>
+
+</html>

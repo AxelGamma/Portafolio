@@ -1,0 +1,24 @@
+/* QUE ES CSS BOX MODEL */
+
+
+/* El size de lo que se muestra en la pantalla esta delimitado por 4 cosas */
+/* Size del contenido, size de relleno(padding), size del borde y el margen */
+
+/* Como hacer el modelo caja mas facil en css dentro del siguiente link con un snippet */
+
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* El asterisco (*) quiere decir que selecciona todos los elementos del html*/
+
+/* box-sizing:border-box  se lo aplica a todos*/
+
+/* El (,) lo que hace es aplicarle la misma regla o mismas propiedades */
+
+/* ::after es contenido que no existe como tal, es un pseudo elemento */

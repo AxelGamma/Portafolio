@@ -1,0 +1,60 @@
+.padding-sintaxis{
+    padding: 5%;               /* aplica 5% de padding en todos los lados*/
+    padding: 10px;              /* aplica 10px de padding en todos los lados */
+    padding: 10px 20px;         /*  arriba y abajo, 10px de padding */ 
+                                /* izquierda y derecha, 20px de padding */
+    padding: 10px 3% 20px;      /*  arriba, 10px de padding          */
+                                /*  izquierda y derecha, 3% de padding */
+                                /*  bottom, 20px padding       */
+    padding: 1em 3px 30px 5px;  /*  arriba    1em  padding  */
+                                /*  derecha  3px  padding  */
+                                /*  abajo 30px padding  */
+                                /*  izquierda   5px  padding
+                                /* en dirección de las agujas del reloj */
+   padding:top left right bottom;
+
+}
+
+.margin-sintaxis {
+    /* Especifica el ancho del área de contenido, 
+    el área de relleno o el área de borde 
+    (dependiendo del 'tamaño del cuadro') de ciertos cuadros. */
+    width: 120rem;
+    /* Damos un size de 1200 px */
+
+    /* Para centrar vamos a usar una propiedad que se llama "margin" */
+    /* La propiedad CSS margin establece el margen para los cuatro lados. 
+    Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen:  
+    margin-top (en-US), margin-right, margin-bottom y margin-left (en-US). */
+    margin-top: 0;
+    margin-bottom: 0;
+    /* Como de lado derecho y izquierdo tienen el margen en auto esto lo que hace es centrarlo */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Aplica a todos los cuatro lados */
+    margin: 1em;
+
+    /* Vertical | Horizontal */
+    margin: 5% auto;
+
+    /* Arriba | Horizontal | Abajo */
+    margin: 1em auto 2em;
+    /* Top    | Right   | Bottom | Left */
+    /* Arriba | Derecha | Abajo  | Izquierda */
+    margin: 2px 1em 0 auto;
+
+    /* Si los dos se repiten como en el siguiente ejemplo */
+    margin: 0 auto 0 auto;
+
+    /* Podemos dejarlo de la siguiente manera */
+    /* TOP and Right | Bottom and Left */
+    margin: 0 auto;
+
+
+    /* Valores globales */
+    margin: inherit;
+    margin: initial;
+    margin: unset;
+
+}
