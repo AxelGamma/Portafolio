@@ -1,0 +1,107 @@
+:root {
+    --blanco: #FFF;
+    --oscuro: #212121;
+    --primario: #1DB954;
+    --secundario: #FFFFFF;
+    --terciario: #121212;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    /* 1rem=10px */
+    /* Con font-family podemos aplicarle el tipo de fuente, y si lo ponemos en el body lo aplica en toda la pagina */
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Staatliches', cursive;
+    background-color: var(--terciario);
+}
+
+.titulo {
+    display: flex;
+}
+
+.titulo h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 6rem;
+    color: var(--primario);
+}
+
+.titulo img {
+    height: 6rem;
+    width: 6rem;
+}
+
+.titulo_contenedor {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* Imagenes de los albums */
+.contenedor_all_albums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--oscuro);
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+
+.contenedor_albums {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 100%;
+}
+
+
+.contenedor_albums_imagenes img {
+    margin: 0 1rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+.contenedor_albums_imagenes img:hover{
+    box-shadow: 0px 0px 28px 1px rgba(29, 185, 84, 1);
+}
+
+.contenedor_albums_imagenes .img1:hover+ .iframe1,
+.contenedor_albums_imagenes .img2:hover+ .iframe2,
+.contenedor_albums_imagenes .img3:hover+ .iframe3,
+.contenedor_albums_imagenes .img4:hover+ .iframe4,
+.contenedor_albums_imagenes .img5:hover+ .iframe5{
+    visibility: visible;
+}
+.contenedor_albums_imagenes.iframe1:hover{
+    visibility: visible;
+}
+
+.iframe1,.iframe2,.iframe3,.iframe4,.iframe5{
+    visibility: hidden;
+}    
+
+
+
+
+
+
+
+
