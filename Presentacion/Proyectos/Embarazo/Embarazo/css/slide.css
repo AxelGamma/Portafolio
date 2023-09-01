@@ -1,0 +1,8 @@
+.slider {
+    background-repeat: no-repeat;
+    
+    height: 690px;
+    position: relative;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
