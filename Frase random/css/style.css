@@ -1,0 +1,49 @@
+:root {}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+main {
+    padding-bottom: 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.sombra {
+    box-shadow: 0px 7px 37px 0px rgba(0, 0, 0, 0.64);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.contenedor_imagenPersonaje img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 30rem;
+}
+
+.frases {
+    margin-bottom: 5rem;
+}
+
+.frases h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.frases input {
+    display: flex;
+    margin: 0 auto;
+}
