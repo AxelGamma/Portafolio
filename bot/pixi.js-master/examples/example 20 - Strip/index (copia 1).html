@@ -1,0 +1,92 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+    <title>pixi.js example 20 - strip </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+    </style>
+    <script src="../../bin/pixi.dev.js"></script>
+</head>
+<body>
+    <script>
+
+    var contador = 0;
+    var retraso=0;
+    var limite=100;
+    // create an new instance of a pixi stage
+    var stage = new PIXI.Stage(0xace455);
+
+    // create a renderer instance.
+    var renderer = PIXI.autoDetectRenderer(window.innerWidth, window.innerHeight);
+
+    var target = new PIXI.Point();
+
+    // add the renderer view element to the DOM
+    document.body.appendChild(renderer.view);
+
+
+    // build a rope!
+        
+    var secciones=20;
+        
+    var length = 918 / secciones;
+
+    var points = [];
+
+    for (var i = 0; i < secciones; i++) {
+        
+        points.push(new PIXI.Point(i * length, 0));
+    };
+
+    strip = new PIXI.Rope(PIXI.Texture.fromImage("snake.png"), points);
+    strip.x = -918/2;
+    
+    var snakeContainer = new PIXI.DisplayObjectContainer();
+    snakeContainer.position.x = window.innerWidth/2;
+    snakeContainer.position.y = window.innerHeight/2;
+
+    snakeContainer.scale.set( window.innerWidth / 1100)
+    stage.addChild(snakeContainer);
+
+    snakeContainer.addChild(strip);
+
+    
+    // start animating
+    requestAnimFrame(animate);
+    
+
+    function animate() {
+	if(retraso==10){
+        contador ++;        
+
+        var length = 918 / secciones;
+
+        // make the snake 
+        for (var i = secciones/2; i < points.length; i++) {
+            
+            points[i].y -= 5;
+            //points[i].x -= 5;
+            
+        };
+        
+        // render the stage
+        renderer.render(stage);
+	contador++;
+	retraso=0;
+	}
+	retraso++;
+	if(contador!=limite){	
+	requestAnimFrame(animate);
+	}
+
+    }
+
+
+    </script>
+
+    </body>
+</html>

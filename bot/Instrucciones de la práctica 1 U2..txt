@@ -1,0 +1,7 @@
+1. Modificar las imágenes del personaje unicamente.
+
+2. Modificar los valores (var ojoDerInicial, cejaDerInicial, posiciones, scale, etc.) al cambiar las imágenes por su personaje, en caso de que observe desorden en los componentes.
+
+3. Ejecutar el programa para observar que funciona satisfactoriamente con los cambios realizados.
+
+4. Documentar los puntos anteriores en el formato de práctica.
