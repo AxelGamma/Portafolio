@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/normalize.css" as="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Librerias de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kanit:wght@600&family=Oswald:wght@200;300;400;500&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <!-- Add jquery libreria -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add libreria jquery totospeech -->
+    <script src="https://cdn.rawgit.com/madfriend/jquery.totemticker/master/jquery.totemticker.min.js"></script>
+
+    <title>TerapiaTec</title>
+
+</head>
+
+<body>
+    <!-- Login -->
+    <section class="login" id="login">
+        <div class="login-container">
+            <h1>Inicio de sesión</h1>
+            <form class="formularioSession">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="main">
+        <!-- Nav con Inicio, Conocenos, Acerca de nosotros y un formulario para comunicarse con nosotros -->
+        <!-- Nav -->
+        <header>
+            <section class="nav-bg">
+                <div class="icono">
+                    <a href="#inicio">
+                        <img src="./img/icono.png" alt="icono">
+                    </a>
+                </div>
+                <nav class="nav-container">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#Quees">Que es la Fisioterapia</a>
+                    <a href="./Brazo.html">Fisioterapia Brazo</a>
+                    <a href="#Contactanos">Contacto</a>
+                </nav>
+            </section>
+        </header>
+        <!-- Main -->
+        <section id="inicio" class="hero">
+            <div class="contenido-hero">
+                <!-- Ponemos section ya que es el hijo del header -->
+                <h2>FISIOTEC</h2>
+
+            </div>
+        </section>
+
+        <!-- Seccion de informacion de la fisioterapia con 8 puntos-->
+        <section id="Quees">
+            <div class="informacionFisio">
+                <div class="informacionFisio-contenedor">
+                    <h2>Fisioterapia</h2>
+                    <p id="fisioterapiaInfo">La fisioterapia es una disciplina de la atención médica que se enfoca en el
+                        diagnóstico, tratamiento
+                        y prevención de trastornos musculoesqueléticos y neuromusculares. Los fisioterapeutas, también
+                        conocidos como fisioterapeutas o terapeutas físicos, utilizan una variedad de técnicas y
+                        modalidades
+                        terapéuticas para ayudar a las personas a mejorar su función física, aliviar el dolor,
+                        recuperarse
+                        de lesiones y mantener una buena salud en general. A continuación, te proporciono información
+                        más
+                        detallada sobre la fisioterapia:</p>
+                    <div class="contenedorBotones">
+                        <button type="submit" class="btinfoFisioterapia">Escuchar texto</button>
+                        <button type="submit" class="btPause">Pausar</button>
+                        <button type="submit" class="btReanudar">Reanudar</button>
+                    </div>
+                    <div class="informacion">
+                        <div class="informacion-1">
+                            <h3>Educación y Formación</h3>
+                            <p id="fisioterapiaInfo1"> Los fisioterapeutas son profesionales de la salud altamente
+                                capacitados. Para convertirse en
+                                fisioterapeuta, generalmente se requiere completar un programa de licenciatura en
+                                fisioterapia o un programa de maestría en fisioterapia. Luego, deben pasar exámenes de
+                                certificación y obtener licencia para ejercer.</p>
+                            <div class="contenedorBotones">
+                                <button type="submit" class="btinfoFisioterapia1">Escuchar texto</button>
+                                <button type="submit" class="btPause1">Pausar</button>
+                                <button type="submit" class="btReanudar1">Reanudar</button>
+                            </div>
+                        </div>
+                        <div class="informacion-2"></div>
+                    </div>
+                    <div class="informacion">
+                        <div class="informacion-3"></div>
+                        <div class="informacion-4">
+                            <h3>Áreas de Especialización</h3>
+                            <p id="fisioterapiaInfo2">Los fisioterapeutas pueden especializarse en diversas áreas, que
+                                incluyen fisioterapia
+                                deportiva, fisioterapia pediátrica, fisioterapia geriátrica, fisioterapia neurológica,
+                                fisioterapia ortopédica y más. Esta especialización les permite abordar las necesidades
+                                específicas de los pacientes.</p>
+                            <div class="contenedorBotones">
+                                <button type="submit" class="btinfoFisioterapia2">Escuchar texto</button>
+                                <button type="submit" class="btPause2">Pausar</button>
+                                <button type="submit" class="btReanudar2">Reanudar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="informacion">
+                        <div class="informacion-5">
+                            <h3>Evaluación y Diagnóstico</h3>
+                            <p id="fisioterapiaInfo3">Los fisioterapeutas evalúan a los pacientes para determinar su
+                                estado
+                                de salud física,
+                                movilidad y función. Utilizan esta información para hacer un diagnóstico y desarrollar
+                                un
+                                plan de tratamiento personalizado.</p>
+                            <div class="contenedorBotones">
+                                <button type="submit" class="btinfoFisioterapia3">Escuchar texto</button>
+                                <button type="submit" class="btPause3">Pausar</button>
+                                <button type="submit" class="btReanudar3">Reanudar</button>
+                            </div>
+                        </div>
+                        <div class="informacion-6"></div>
+                    </div>
+                    <div class="informacion">
+                        <div class="informacion-7"></div>
+                        <div class="informacion-8">
+                            <h3>Tratamiento</h3>
+                            <p id="fisioterapiaInfo4">El tratamiento fisioterapéutico puede incluir una variedad de
+                                técnicas
+                                y modalidades, como ejercicios terapéuticos, terapia manual, electroterapia,
+                                ultrasonido,
+                                calor y frío, tracción, y más. El objetivo principal es restaurar o mejorar la función
+                                física y aliviar el dolor.</p>
+                            <div class="contenedorBotones">
+                                <button type="submit" class="btinfoFisioterapia4">Escuchar texto</button>
+                                <button type="submit" class="btPause4">Pausar</button>
+                                <button type="submit" class="btReanudar4">Reanudar</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="informacion">
+
+                        <div class="informacion-9">
+                            <h3>Prevención de Lesiones</h3>
+                            <p id="fisioterapiaInfo5">Los fisioterapeutas también trabajan en la prevención de lesiones.
+                                Pueden proporcionar orientación sobre el acondicionamiento físico, ergonomía en el lugar
+                                de
+                                trabajo y técnicas de prevención de lesiones deportivas.</p>
+                            <div class="contenedorBotones">
+                                <button type="submit" class="btinfoFisioterapia5">Escuchar texto</button>
+                                <button type="submit" class="btPause5">Pausar</button>
+                                <button type="submit" class="btReanudar5">Reanudar</button>
+                            </div>
+                        </div>
+                        <div class="informacion-10"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contactanos -->
+        <section id="Contactanos">
+            <h2>Contacto</h2>
+            <!-- Con la etiqueta form le decimos al html que todo lo de adentro de de un formulario -->
+            <form class="formulario">
+                <!-- Cuando queramos darle indicaciones a los usuarios podemos utilizar un legend-->
+                <fieldset>
+                    <!-- Podemos ir agrupando con un div cada label y su input -->
+                    <legend>Contactanos llenando todos los campos</legend>
+                    <!-- Tenemos el atributo label que es el nombre de la etiqueta el cual tiene seguido un input -->
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Nombre">
+                            <!-- Aqui es donde nosotros vamos a introducir datos -->
+                            <!-- Los input tienes diferentes type -->
+                            <!-- Con placeholder podemos por un texto guia -->
+                        </div>
+                        <div class="campo">
+                            <label>Telefono</label>
+                            <input class="input-text" type="tel" placeholder="Telefono">
+                        </div>
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text correo" type="email" placeholder="Email">
+                        </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="alinear-derecha flex">
+
+                        <button class="contenedorBotones formularioSession" type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <script src="js/Acciones.js"></script>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Derechos reservados a @David Carmona</p>
+    </footer>
+
+</body>
+
+
+
+</html>

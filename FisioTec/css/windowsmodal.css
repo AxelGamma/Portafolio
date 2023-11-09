@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+:root {
+    --primario-color: #ffffff;
+    --secundario-color: #676f9d;
+    --terciario-color: #424769;
+    --cuaternario-color: #2d3250;
+    --quinario-color: #f9b17a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+*,
+h2 {
+    color: var(--cuaternario-color);
+}
+
+
+.tituloCubito {
+    text-align: center;
+    padding: 1rem;
+}
+
+.tituloCubito button {
+    background-color: var(--quinario-color);
+    color: var(--cuaternario-color);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: -2px 3px 17px -6px rgba(249, 177, 122, 1);
+    border-radius: 0.6rem;
+    margin: 0.5rem auto;
+    border: color(var(--primario-color));
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    display: flex;
+}
+.contenedorBotones{
+    height: 50%;
+}
+
+.contenedorBotones button {
+
+    background-color: var(--quinario-color);
+    color: var(--cuaternario-color);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: -2px 3px 17px -6px rgba(249, 177, 122, 1);
+    border-radius: 0.6rem;
+
+    border: color(var(--primario-color));
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    display: flex;
+    transition: all 300ms ease;
+}
+
+.contenedorBotones button:hover {
+    background-color: var(--secundario-color);
+    color: var(--primario-color);
+}
+
+.main {
+    margin-bottom: 15rem;
+}
+
+/* Boton-modal */
+.boton-modal {
+    padding: 40px;
+}
+
+.boton-modal label {
+    padding: 5px;
+    background-color: var(--quinario-color);
+    color: var(--cuaternario-color);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    /* transition hace que haya un cambio de color con atraso */
+    transition: all 300ms ease;
+    box-shadow: -2px 3px 17px -6px rgba(249, 177, 122, 1);
+}
+
+.boton-modal label:hover {
+    background-color: var(--secundario-color);
+    color: var(--primario-color);
+
+}
+
+/* Fin Boton-modal */
+
+/* Ventana-modal */
+#btn-modal1,
+#btn-modal2,
+#btn-modal3,
+#btn-modal4,
+#btn-modal5,
+#btn-modal6,
+#btn-modal7,
+#btn-modal8,
+#btn-modal9,
+#btn-modal10,
+#btn-modal11,
+#btn-modal12,
+#btn-modal13,
+#btn-modal14,
+#btn-modal15,
+#btn-modal16 {
+    display: none;
+}
+
+
+
+.container-modal1,
+.container-modal2,
+.container-modal3,
+.container-modal4,
+.container-modal5,
+.container-modal6,
+.container-modal7,
+.container-modal8,
+.container-modal9,
+.container-modal10,
+.container-modal11,
+.container-modal12,
+.container-modal13,
+.container-modal14,
+.container-modal15,
+.container-modal16{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* z-index que hace z-index es una propiedad CSS que se utiliza para controlar el orden de apilamiento de los elementos en una página web. Es decir, determina qué elementos se muestran por encima de otros cuando se superponen. Los elementos con un valor de z-index más alto se muestran por encima de los elementos con un valor de z-index más bajo. Por lo tanto, z-index es útil para controlar la posición de los elementos en capas en una página web.z-index es una propiedad CSS que se utiliza para controlar el orden de apilamiento de los elementos en una página web. Es decir, determina qué elementos se muestran por encima de otros cuando se superponen. Los elementos con un valor de z-index más alto se muestran por encima de los elementos con un valor de z-index más bajo. Por lo tanto, z-index es útil para controlar la posición de los elementos en capas en una página web.*/
+
+    z-index: 100;
+}
+
+
+#btn-modal1:checked~.container-modal1,
+#btn-modal2:checked~.container-modal2,
+#btn-modal3:checked~.container-modal3,
+#btn-modal4:checked~.container-modal4,
+#btn-modal5:checked~.container-modal5,
+#btn-modal6:checked~.container-modal6,
+#btn-modal7:checked~.container-modal7,
+#btn-modal8:checked~.container-modal8,
+#btn-modal9:checked~.container-modal9,
+#btn-modal10:checked~.container-modal10,
+#btn-modal11:checked~.container-modal11,
+#btn-modal12:checked~.container-modal12,
+#btn-modal13:checked~.container-modal13,
+#btn-modal14:checked~.container-modal14,
+#btn-modal15:checked~.container-modal15,
+#btn-modal16:checked~.container-modal16 {
+    display: flex;
+    opacity: 1;
+}
+
+
+
+.content-modal {
+    width: 500px;
+    background-color: var(--primario-color);
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.content-modal h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.content-modal p {
+    padding: 15px 0px;
+    border-top: 1px solid var(--secundario-color);
+    border-bottom: 1px solid var(--secundario-color);
+}
+
+.content-modal .btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label {
+    padding: 10px 15px;
+    background-color: var(--quinario-color);
+    color: var(--cuaternario-color);
+    border-radius: 4px;
+    cursor: pointer;
+    /* transition hace que haya un cambio de color con atraso */
+    transition: all 300ms ease;
+
+}
+
+.content-modal .btn-cerrar label:hover {
+    background-color: var(--secundario-color);
+    color: var(--primario-color);
+}
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Targets */
+/* Estilos para la tarjeta */
+.tarjeta {
+    display: flex;
+    border: 1px solid var(--cuaternario-color);
+    margin: 60px;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: var(--cuaternario-color);
+    box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.381);
+}
+
+.tarjeta p {
+    color: var(--primario-color);
+}
+
+.tarjeta h3 {
+    color: var(--quinario-color);
+}
+
+/* Estilos para la imagen */
+.imagen {
+    flex: 1;
+    /* La imagen ocupa el 50% del ancho */
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* Estilos para el resumen a la derecha */
+.resumen {
+    flex: 2;
+    /* El resumen ocupa el 50% del ancho */
+    padding: 40px 20px;
+}
+
+.resumen h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.resumen p {
+    margin: 1rem;
+    font-size: 1rem;
+
+}
+
+/* Estilos para el botón modal */
+.boton-modal {
+    display: flex;
+    justify-content: flex-end;
+    /* Color de fondo del botón */
+    color: #fff;
+    /* Color del texto del botón */
+    
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: max-content;
+}
