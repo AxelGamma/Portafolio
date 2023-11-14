@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Crear Nuevo Registro
+  body
+    h1 Crear Nuevo Registro
+    form(action="/Alta", method="POST")
+      label(for="Nombre") Nombre
+      input(type="text", name="Nombre", placeholder="Nombre")
+
+      label(for="Fecha") Fecha
+      input(type="text", name="Fecha", placeholder="Fecha")
+
+      label(for="Artista") Artista
+      input(type="text", name="Artista", placeholder="Artista")
+
+      button(type="submit") Guardar

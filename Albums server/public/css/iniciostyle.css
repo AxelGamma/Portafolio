@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    background-color: green;
+    margin: 0;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: gray;
+    font-style: oblique;
+    text-align: center;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;
+    background-color: #f0f0f0;
+}
+
+.animated-text {
+    font-size: 2rem;
+    animation: moveText 3s linear infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}

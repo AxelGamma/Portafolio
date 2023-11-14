@@ -1,0 +1,18 @@
+{
+  "name": "ejemplo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aplicacion.js",
+  "scripts": {
+    "load": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "mongose": "^0.0.2-security",
+    "pug": "^3.0.2"
+  }
+}
