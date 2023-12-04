@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- importar encabezado html -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fuentes de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Normilize -->
+    <link rel="preconnect" href="css/normalize.css" as="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Estilos -->
+    <link rel="preconnect" href="css/style.css" as="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/busqueda.css">
+    <!-- Voz -->
+    <script src="js/voz.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Nav -->
+    <header>
+        <section class="nav-bg">
+            <nav class="nav-container">
+                <a href="index.html">Inicio</a>
+                <a href="recetas.html">Recetas</a>
+                <a href="centro_ayuda.html">Centros de Ayuda</a>
+                <a href="index.html#contactanos">Contactanos</a>
+            </nav>
+        </section>
+        <!-- Tarjetas con buscador -->
+        <!-- Barra de busqueda -->
+        <section class="busqueda">
+            <div class="busqueda-container">
+                <form action="">
+                    <input type="text" id="inputBusqueda" placeholder="Comida">
+                    <!-- <button class="izqubtn" type="submit" id="btnbuscarclick">Buscar</button> -->
+                    <button class="derbtn" type="button" id="btnBuscar">Voz</button>
+                </form>
+            </div>
+        </section>
+        <section class="content-botones">
+            <!-- Botones de Pausar, Stop, Reanudar -->
+            <div id="botones-receta">
+                <button class="btPause">Pausar</button>
+                <button class="btStop">Stop</button>
+                <button class="btReanudar">Reanudar</button>
+
+            </div>
+        </section>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Desayuno -->
+        <div class="contenedor-desayuno">
+            <div class="titulo-recetas">
+                <h2>Desayuno</h2>
+            </div>
+            <!-- Ejemplo de tarjetas -->
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Desayuno/desayuno1.jpg" alt="Imagen de la receta 1">
+                </div>
+                <div class="contenido">
+                    <h3>Tortitas</h3>
+                    <p>
+                        <strong>TORTITAS DE AVENA Y CLARA DE HUEVO</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 1 huevo entero
+                        <br>
+                        - 2 claras de huevo
+                        <br>
+                        - 1 taza de copos de avena
+                        <br>
+                        - 1 taza de leche vegetal (almendra, avena, soja, etc.)
+                        <br>
+                        - Canela al gusto
+                        <br>
+                        - Stevia al gusto (opcional)
+                        <br>
+                        - Arándanos o crema de cacahuete para servir (opcional)
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. En un tazón, bate el huevo entero y las claras.
+                        <br>
+                        2. Añade los copos de avena y mezcla bien.
+                        <br>
+                        3. Agrega la leche vegetal, canela y stevia (si se prefiere más dulce). Mezcla hasta obtener una
+                        masa homogénea.
+                        <br>
+                        4. Calienta una sartén antiadherente a fuego medio.
+                        <br>
+                        5. Vierte pequeñas porciones de masa en la sartén para formar las tortitas.
+                        <br>
+                        6. Cocina cada lado hasta que estén doradas.
+                        <br>
+                        7. Sirve las tortitas con arándanos o crema de cacahuete, según tu preferencia.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+
+
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Desayuno/desayuno2.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>Yogur con fruta</h3>
+                    <p>
+                        <strong>YOGUR CON FRUTA</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 1 taza de yogur natural sin azúcar (preferiblemente griego)
+                        <br>
+                        - Frutas variadas cortadas en trozos (fresas, plátano, kiwi, mango, etc.)
+                        <br>
+                        - Puñado de cereales (opcional)
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. En un tazón, coloca la taza de yogur natural sin azúcar.
+                        <br>
+                        2. Agrega las frutas cortadas en trozos al yogur.
+                        <br>
+                        3. Mezcla bien para distribuir las frutas de manera uniforme.
+                        <br>
+                        4. Si lo prefieres, puedes añadir un puñado de cereales para darle textura y sabor.
+                        <br>
+                        5. Otra opción es preparar este bowl la noche anterior y refrigerarlo para ahorrar tiempo por la
+                        mañana.
+                        <br>
+                        6. ¡Sirve y disfruta de este desayuno rico en calcio y energía!
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Desayuno/desayuno3.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>Avena</h3>
+                    <p>
+                        <strong>DESAYUNO DE AVENA CON SEMILLAS Y CREMA DE CACAHUETE</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 1 taza de avena
+                        <br>
+                        - 2 tazas de leche desnatada (o leche vegetal)
+                        <br>
+                        - 2 cucharadas de semillas de chía
+                        <br>
+                        - 2 cucharadas de crema de cacahuete
+                        <br>
+                        - Frutas frescas para decorar (opcional)
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. En una cacerola, calienta la leche desnatada hasta que esté a punto de hervir.
+                        <br>
+                        2. Agrega la avena y reduce el fuego. Cocina a fuego lento, revolviendo ocasionalmente, hasta
+                        que la avena esté tierna y la mezcla tenga una consistencia cremosa.
+                        <br>
+                        3. Retira la cacerola del fuego y añade las semillas de chía. Mezcla bien.
+                        <br>
+                        4. Sirve la avena en un tazón y agrega cucharadas de crema de cacahuete por encima.
+                        <br>
+                        5. Decora con frutas frescas si lo deseas.
+                        <br>
+                        6. ¡Disfruta de este delicioso desayuno cargado de beneficios para la salud!
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Desayuno/desayuno4.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>Smoothie de frutas</h3>
+                    <p>
+                        <strong>DESAYUNO DE AVENA CON SEMILLAS Y CREMA DE CACAHUETE</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 1 taza de avena
+                        <br>
+                        - 2 tazas de leche desnatada (o leche vegetal)
+                        <br>
+                        - 2 cucharadas de semillas de chía
+                        <br>
+                        - 2 cucharadas de crema de cacahuete
+                        <br>
+                        - Frutas frescas para decorar (opcional)
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. En una cacerola, calienta la leche desnatada hasta que esté a punto de hervir.
+                        <br>
+                        2. Agrega la avena y reduce el fuego. Cocina a fuego lento, revolviendo ocasionalmente, hasta
+                        que la avena esté tierna y la mezcla tenga una consistencia cremosa.
+                        <br>
+                        3. Retira la cacerola del fuego y añade las semillas de chía. Mezcla bien.
+                        <br>
+                        4. Sirve la avena en un tazón y agrega cucharadas de crema de cacahuete por encima.
+                        <br>
+                        5. Decora con frutas frescas si lo deseas.
+                        <br>
+                        6. ¡Disfruta de este delicioso desayuno cargado de beneficios para la salud!
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Desayuno/desayuno5.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>Tostadas de pan integral</h3>
+                    <p>
+                        <strong>TOSTADAS DE PAN INTEGRAL CON CREMA DE CACAHUETE Y PLÁTANO</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - Pan integral (preferiblemente tostado)
+                        <br>
+                        - Crema de cacahuete natural
+                        <br>
+                        - Plátano, cortado en rodajas
+                        <br>
+                        - Miel (opcional, para drizzlear)
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Tuesta las rebanadas de pan integral hasta que estén doradas y crujientes.
+                        <br>
+                        2. Unta una generosa capa de crema de cacahuete natural sobre cada tostada.
+                        <br>
+                        3. Coloca rodajas de plátano sobre la crema de cacahuete.
+                        <br>
+                        4. Si prefieres un toque más dulce, drizzlea un poco de miel sobre las tostadas.
+                        <br>
+                        5. ¡Disfruta de estas tostadas nutritivas y deliciosas como parte de tu desayuno!
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Desayuno/desayuno6.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>Tortitas de plátano</h3>
+                    <p>
+                        <strong>TORTITAS DE PLÁTANO</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 2 plátanos maduros
+                        <br>
+                        - 4 claras de huevo
+                        <br>
+                        - 1 taza de avena (puede ser harina de avena)
+                        <br>
+                        - 1 cucharadita de esencia de vainilla
+                        <br>
+                        - 1/2 cucharadita de canela
+                        <br>
+                        - Aceite en spray para engrasar la sartén
+                        <br>
+                        - Frutas frescas para decorar (opcional)
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. En un tazón, machaca los plátanos maduros hasta obtener un puré.
+                        <br>
+                        2. Agrega las claras de huevo, la avena, la esencia de vainilla y la canela al puré de plátano.
+                        Mezcla bien.
+                        <br>
+                        3. Calienta una sartén antiadherente y úntala con aceite en spray.
+                        <br>
+                        4. Vierte porciones de la mezcla en la sartén caliente para formar las tortitas.
+                        <br>
+                        5. Cocina cada lado hasta que estén doradas.
+                        <br>
+                        6. Decora con frutas frescas si lo deseas.
+                        <br>
+                        7. ¡Disfruta de estas deliciosas tortitas de plátano, ricas en sabor y nutrientes!
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Comidas -->
+        <div class="contenedor-comida">
+            <div class="titulo-recetas">
+                <h2>Comida</h2>
+            </div>
+            <!-- Ejemplo de tarjetas -->
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Comida/comida1.jpg" alt="Imagen de la receta 1">
+                </div>
+                <div class="contenido">
+                    <h3>MACARRONES CON GAMBAS</h3>
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 300 gramos de macarrones
+                        <br>
+                        - 1 puerro
+                        <br>
+                        - 1 calabacín
+                        <br>
+                        - 400 gramos de gambas
+                        <br>
+                        - 300 mililitros de crema de avena
+                        <br>
+                        - Orégano
+                        <br>
+                        - Queso emmental rallado
+                        <br>
+                        - Pimienta rosa
+                        <br>
+                        - Aceite de oliva
+                        <br>
+                        - Sal
+                        <br>
+                        <br>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Precalienta el horno a 200 grados Celsius.
+                        <br>
+                        2. Sofríe el puerro, añade el calabacín, las gambas, y cocina con la crema de avena y el
+                        orégano.
+                        <br>
+                        3. Hierve los macarrones en agua salada y mezcla con la salsa.
+                        <br>
+                        4. Coloca en una fuente, cubre con queso y gratina en el horno.
+                        <br>
+                        5. Espolvorea con pimienta rosa y orégano fresco.
+                        <br>
+                        6. Sirve y disfruta. ¡Buen provecho!
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Comida/comida2.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>PEPINOS RELLENOS DE ENSALADA DE ARROZ</h3>
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 2 pepinos
+                        <br>
+                        - 200 g de arroz largo
+                        <br>
+                        - 2 zanahorias picadas
+                        <br>
+                        - 1 lata de 80 g de atún
+                        <br>
+                        - 4 cucharadas de aceitunas verdes deshuesadas
+                        <br>
+                        - 50 g de maíz dulce
+                        <br>
+                        - Hojas de rúcula
+                        <br>
+                        - 2 cucharadas de vinagre de Jerez
+                        <br>
+                        - 5 cucharadas de aceite de oliva picadas
+                        <br>
+                        - Pimienta
+                        <br>
+                        - Sal
+                        <br>
+                        <br>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Cuece el arroz en agua salada durante 16 minutos. Escúrrelo y refréscalo con agua fría.
+                        <br>
+                        2. Pela los pepinos y córtalos por la mitad, a lo largo. Vacíalos ligeramente con una
+                        cucharilla.
+                        <br>
+                        3. Pica la pulpa y mézclala con el arroz, el atún escurrido, las zanahorias y las aceitunas.
+                        <br>
+                        4. Prepara una vinagreta batiendo el aceite con el vinagre de Jerez y una pizca de sal y
+                        pimienta.
+                        <br>
+                        5. Aliña con ella la preparación anterior y rellena las barquitas de pepino.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Comida/comida3.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>HAMBURGUESAS DE QUINOA Y VERDURAS CON TOMATE
+                    </h3>
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 2 huevos cocidos en rodajas
+                        <br>
+                        - 150 g de quinoa cocida
+                        <br>
+                        - ½ puerro picado
+                        <br>
+                        - 1 zanahoria rallada
+                        <br>
+                        - ½ cebolla morada picada
+                        <br>
+                        - Harina de garbanzo
+                        <br>
+                        - 1 cucharada de queso cheddar cortado en dados muy pequeños
+                        <br>
+                        - 1 tomate pera duro en rodajas
+                        <br>
+                        - 50 g de brotes tiernos variados
+                        <br>
+                        - 1 rabanito en rodajas
+                        <br>
+                        - Unas hojas de rúcula
+                        <br>
+                        - Aceite de oliva
+                        <br>
+                        - Pimienta
+                        <br>
+                        - Sal
+                        <br>
+                        <br>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Calienta la quinoa ligeramente y pásala a un bol grande.
+                        <br>
+                        2. Pon el puerro en un recipiente apto para el microondas, vierte medio dedo de agua, tapa y
+                        cuece 2 minutos. Remueve con cuidado de no quemarte, cuece 1 minuto más y escúrrelo.
+                        <br>
+                        3. Mezcla la quinoa con el puerro, la zanahoria, la cebolla, el queso, pimienta y sal. Agrega
+                        los huevos restantes, uno a uno y removiendo.
+                        <br>
+                        4. Añade 2 cucharadas rasas de harina de garbanzo y mezcla hasta integrarla.
+                        <br>
+                        5. Forma 4 bolas con la masa anterior, aplástalas un poco para hacer 4 hamburguesas y rebózalas
+                        con harina de garbanzo. Fríe en la sartén.
+                        <br>
+                        6. Cubre 2 hamburguesas con el tomate, el huevo y los brotes, y coloca encima las demás.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Comida/comida4.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>SALTEADO ORIENTAL DE TERNERA CON VERDURAS
+                    </h3>
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 400 g de filetes finos de ternera
+                        <br>
+                        - 100 g de champiñones en láminas
+                        <br>
+                        - 2 pimientos verdes en tiras
+                        <br>
+                        - 1 pimiento rojo en tiras
+                        <br>
+                        - 2 zanahorias en juliana
+                        <br>
+                        - 1 cebolla en juliana
+                        <br>
+                        - 2 cucharadas de salsa de soja
+                        <br>
+                        - 1 cucharada de semillas de sésamo
+                        <br>
+                        - Cilantro
+                        <br>
+                        - Harina
+                        <br>
+                        - Aceite de oliva
+                        <br>
+                        - Pimienta
+                        <br>
+                        - Sal
+                        <br>
+                        <br>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Corta en tiras los filetes, salpimiéntalos y enharínalos ligeramente.
+                        <br>
+                        2. Calienta un wok y cuando empiece a humear agrega un hilo de aceite. Ve añadiendo las
+                        hortalizas, por tandas, y saltéalas 1 minuto.
+                        <br>
+                        3. Añade otro hilo de aceite y saltea también la ternera un par de minutos, hasta que se dore.
+                        <br>
+                        4. Incorpora de nuevo las verduras y añade la salsa de soja. Saltea todo junto unos minutos,
+                        espolvorea con el sésamo y el cilantro lavado y picado, y sirve.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Comida/comida5.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>SARDINAS EN PAPILLOTE CON VERDURAS
+                    </h3>
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - ½ kg de sardinas en filetes
+                        <br>
+                        - 2 zanahorias en juliana
+                        <br>
+                        - 2 patatas en láminas
+                        <br>
+                        - 1 calabacín en juliana
+                        <br>
+                        - 1 ramita de romero
+                        <br>
+                        - Aceite de oliva
+                        <br>
+                        - 2 dientes de ajo en láminas
+                        <br>
+                        - Sal
+                        <br>
+                        <br>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Precalienta el horno a 200 ºC. Corta cuatro trozos de papel sulfurizado para hacer los
+                        paquetes.
+                        <br>
+                        2. Coloca en el centro una base de patata y sazona ligeramente. Dispón el calabacín y la
+                        zanahoria por encima.
+                        <br>
+                        3. Cubre las verduras con varios filetes de sardina. Agrega un trocito de romero lavado y unas
+                        láminas de ajo.
+                        <br>
+                        4. Dobla el papel sobre el relleno formando unos paquetes bien sellados y átalos con hilo de
+                        cocina. Hornea durante 15 minutos.
+                        <br>
+                        5. Deja reposar los paquetes unos minutos antes de abrirlos. Riega el pescado con un hilo de
+                        aceite y sirve enseguida.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Desayuno/desayuno6.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>LASAÑA VEGETAL LIGHT
+                    </h3>
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 1 paquete de placas de lasaña precocida
+                        <br>
+                        - 200 g de champiñones
+                        <br>
+                        - 200 g de espinacas frescas
+                        <br>
+                        - 3 zanahorias en dados
+                        <br>
+                        - 1 calabacín en dados
+                        <br>
+                        - 1 berenjena en dados
+                        <br>
+                        - 200 g de salsa de tomate
+                        <br>
+                        - 500 ml de leche desnatada
+                        <br>
+                        - 100 g de queso rallado
+                        <br>
+                        - 1 cucharada de harina
+                        <br>
+                        - Aceite de oliva
+                        <br>
+                        - Sal
+                        <br>
+                        <br>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Precalienta el horno a 170ºC. Calienta en una sartén dos cucharadas de aceite de oliva y
+                        tuesta la harina. Vierte la leche en un hilo sin dejar de mover. Sazona y cocina hasta que
+                        espese.
+                        <br>
+                        2. Cuece las espinacas al vapor y mézclalas con un poco de besamel. Sofríe el calabacín y la
+                        zanahoria 2 minutos, incorpora la berenjena y cocina 4 minutos, añade los champiñones y déjalo
+                        cocinar durante 2 minutos más.
+                        <br>
+                        3. Incorpora las espinacas a las verduras. Cuece la pasta según las instrucciones del fabricante
+                        y déjala escurrir en un paño de algodón.
+                        <br>
+                        4. Monta la lasaña alternando capas de pasta con verdura y salsa de tomate. Cubre con la besamel
+                        restante, espolvorea con el queso rallado y hornea la lasaña durante 20 minutos.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-cenas">
+            <div class="titulo-recetas">
+                <h2>Cenas</h2>
+            </div>
+            <!-- Ejemplo de tarjetas -->
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Cena/Cena1.jpg" alt="Imagen de la receta 1">
+                </div>
+                <div class="contenido">
+                    <h3>AGUACATE RELLENO</h3>
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 2 aguacates maduros
+                        <br>
+                        - 200 g de camarones cocidos y pelados
+                        <br>
+                        - 1 taza de tomates cherry, cortados por la mitad
+                        <br>
+                        - 1/2 pepino, picado en cubos
+                        <br>
+                        - 1/4 de taza de cebolla roja, finamente picada
+                        <br>
+                        - 2 cucharadas de cilantro fresco, picado
+                        <br>
+                        - Jugo de 1 limón
+                        <br>
+                        - 2 cucharadas de aceite de oliva
+                        <br>
+                        - Sal y pimienta al gusto
+                        <br>
+                        - Hojas de lechuga para decorar (opcional)
+                        <br>
+                        <br>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Corta los aguacates por la mitad y retira el hueso. Con una cuchara, saca un poco de pulpa
+                        para hacer espacio para el relleno.
+                        <br>
+                        2. En un tazón grande, combina los camarones cocidos, tomates cherry, pepino, cebolla roja y
+                        cilantro.
+                        <br>
+                        3. En otro recipiente, mezcla el jugo de limón, aceite de oliva, sal y pimienta. Vierte esta
+                        vinagreta sobre la mezcla de camarones y revuelve suavemente para combinar.
+                        <br>
+                        4. Rellena cada mitad de aguacate con la ensalada de camarones.
+                        <br>
+                        5. Opcionalmente, decora con hojas de lechuga y más cilantro fresco.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Cena -->
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Cena/cena2.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>ROLLOS DE LECHUGA ROMANA</h3>
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 2 aguacates maduros
+                        <br>
+                        - 200 g de camarones cocidos y pelados
+                        <br>
+                        - 1 taza de tomates cherry, cortados por la mitad
+                        <br>
+                        - 1/2 pepino, picado en cubos
+                        <br>
+                        - 1/4 de taza de cebolla roja, finamente picada
+                        <br>
+                        - 2 cucharadas de cilantro fresco, picado
+                        <br>
+                        - Jugo de 1 limón
+                        <br>
+                        - 2 cucharadas de aceite de oliva
+                        <br>
+                        - Sal y pimienta al gusto
+                        <br>
+                        - Hojas de lechuga para decorar (opcional)
+                        <br>
+                        <br>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Corta los aguacates por la mitad y retira el hueso. Con una cuchara, saca un poco de pulpa
+                        para hacer espacio para el relleno.
+                        <br>
+                        2. En un tazón grande, combina los camarones cocidos, tomates cherry, pepino, cebolla roja y
+                        cilantro.
+                        <br>
+                        3. En otro recipiente, mezcla el jugo de limón, aceite de oliva, sal y pimienta. Vierte esta
+                        vinagreta sobre la mezcla de camarones y revuelve suavemente para combinar.
+                        <br>
+                        4. Rellena cada mitad de aguacate con la ensalada de camarones.
+                        <br>
+                        5. Opcionalmente, decora con hojas de lechuga y más cilantro fresco.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Cena/cena3.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>ENSALADA CAMPERA</h3>
+                    <p>
+                        <strong>ENSALADA CAMPERA</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - Patatas pequeñas al vapor (2-3 unidades)
+                        <br>
+                        - Zanahoria rallada
+                        <br>
+                        - Cebolla, picada
+                        <br>
+                        - Pimiento rojo, cortado en tiras
+                        <br>
+                        - Aceitunas, al gusto
+                        <br>
+                        - Tomates, 2 unidades, picados
+                        <br>
+                        - Aceite de oliva, al gusto
+                        <br>
+                        - Limón o vinagre, al gusto
+                        <br>
+                        - Tahini (opcional, para dar cremosidad)
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Haz una tanda de patatas pequeñas al vapor y deja que se enfríen. Guarda el resto en la
+                        nevera para otras ocasiones.
+                        <br>
+                        2. A la hora de preparar la cena, corta las patatas al vapor en trozos y colócalas en un tazón
+                        grande.
+                        <br>
+                        3. Agrega zanahoria rallada, cebolla picada, pimiento rojo en tiras, aceitunas y los tomates
+                        picados al tazón con las patatas.
+                        <br>
+                        4. Aliña la ensalada con aceite de oliva y exprime limón o añade vinagre al gusto.
+                        <br>
+                        5. Opcionalmente, añade tahini para darle cremosidad a la ensalada. Mezcla bien todos los
+                        ingredientes.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Cena/cena4.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>ENSALADA DE FRUTAS</h3>
+                    <p>
+                        <strong>ENSALADA DE VERANO</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - Lechuga romana, lavada y picada
+                        <br>
+                        - Tomates cherry, cortados por la mitad
+                        <br>
+                        - Pepino, cortado en rodajas
+                        <br>
+                        - Zanahoria, rallada
+                        <br>
+                        - Maíz dulce, cocido
+                        <br>
+                        - Queso feta, desmenuzado
+                        <br>
+                        - Aceitunas kalamata, deshuesadas
+                        <br>
+                        - Albóndigas de pollo, cocidas y cortadas por la mitad
+                        <br>
+                        - Perejil fresco, picado
+                    </p>
+
+                    <p>
+                        <strong>Aderezo:</strong>
+                        <br>
+                        - Aceite de oliva extra virgen
+                        <br>
+                        - Vinagre balsámico
+                        <br>
+                        - Mostaza Dijon
+                        <br>
+                        - Miel
+                        <br>
+                        - Sal y pimienta al gusto
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. En un tazón grande, combina la lechuga romana, tomates cherry, pepino, zanahoria rallada,
+                        maíz dulce, queso feta, aceitunas kalamata y albóndigas de pollo.
+                        <br>
+                        2. En un frasco con tapa, mezcla todos los ingredientes del aderezo: aceite de oliva, vinagre
+                        balsámico, mostaza Dijon, miel, sal y pimienta. Agita bien para emulsionar.
+                        <br>
+                        3. Vierte el aderezo sobre la ensalada y mezcla suavemente para asegurar que todos los
+                        ingredientes estén bien cubiertos.
+                        <br>
+                        4. Espolvorea perejil fresco picado por encima antes de servir.
+                        <br>
+                        5. ¡Sirve y disfruta de esta deliciosa ensalada de verano llena de sabores frescos y vibrantes!
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Cena/cena5.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>PATÉS VARIADOS</h3>
+                    <p>
+                        <strong>PATÉS VARIADOS</strong>
+                    </p>
+
+                    <p>
+                        <strong>Hummus</strong>
+                        <br>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 1 lata de garbanzos, escurridos
+                        <br>
+                        - 3 cucharadas de tahini
+                        <br>
+                        - 2 dientes de ajo, picados
+                        <br>
+                        - Jugo de 1 limón
+                        <br>
+                        - 2 cucharadas de aceite de oliva
+                        <br>
+                        - Sal y comino al gusto
+                        <br>
+                        - Agua (opcional, para ajustar la consistencia)
+                    </p>
+
+                    <p>
+                        <strong>Paté de Berenjenas</strong>
+                        <br>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 2 berenjenas grandes
+                        <br>
+                        - 3 cucharadas de aceite de oliva
+                        <br>
+                        - 2 dientes de ajo, picados
+                        <br>
+                        - Jugo de 1 limón
+                        <br>
+                        - Sal y pimienta al gusto
+                        <br>
+                        - Perejil fresco, picado (opcional)
+                    </p>
+
+                    <p>
+                        <strong>Paté de Champiñones</strong>
+                        <br>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 200 g de champiñones, picados
+                        <br>
+                        - 1 cebolla, picada
+                        <br>
+                        - 2 dientes de ajo, picados
+                        <br>
+                        - 3 cucharadas de aceite de oliva
+                        <br>
+                        - 1 cucharadita de tomillo seco
+                        <br>
+                        - Sal y pimienta al gusto
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. Para el <em>Hummus</em>: Mezcla todos los ingredientes en una licuadora o procesador de
+                        alimentos hasta obtener una mezcla suave. Añade agua si es necesario para ajustar la
+                        consistencia.
+                        <br>
+                        2. Para el <em>Paté de Berenjenas</em>: Asa las berenjenas en el horno hasta que la piel se
+                        arrugue. Retira la pulpa y mezcla con los demás ingredientes hasta obtener una textura suave.
+                        <br>
+                        3. Para el <em>Paté de Champiñones</em>: Saltea la cebolla, ajo y champiñones en aceite de
+                        oliva. Añade tomillo, sal y pimienta. Procesa hasta obtener una mezcla homogénea.
+                        <br>
+                        4. Sirve los patés con tabulé, rebanadas de pan integral tostado o ensalada de hojas tiernas.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="imagen-receta">
+                    <img src="img/Cena/cena6.jpg" alt="Imagen de la receta 2">
+                </div>
+                <div class="contenido">
+                    <h3>GAZPACHO</h3>
+                    <p>
+                        <strong>GAZPACHO</strong>
+                    </p>
+
+                    <p>
+                        <strong>Ingredientes:</strong>
+                        <br>
+                        - 6 tomates maduros, pelados y sin semillas
+                        <br>
+                        - 1 pepino, pelado y cortado en trozos
+                        <br>
+                        - 1 pimiento verde, cortado en trozos
+                        <br>
+                        - 1 cebolla, pelada y cortada en trozos
+                        <br>
+                        - 2 dientes de ajo, pelados
+                        <br>
+                        - 1/4 taza de aceite de oliva extra virgen
+                        <br>
+                        - 2 cucharadas de vinagre de vino tinto
+                        <br>
+                        - Sal y pimienta al gusto
+                        <br>
+                        - 1/2 pepino, en rodajas (remojado en vinagre o zumo de limón y sal, escurrido)
+                    </p>
+
+                    <p>
+                        <strong>Instrucciones:</strong>
+                        <br>
+                        1. En una licuadora o procesador de alimentos, mezcla los tomates, pepino, pimiento, cebolla,
+                        ajo, aceite de oliva y vinagre de vino tinto hasta obtener una mezcla suave.
+                        <br>
+                        2. Agrega sal y pimienta al gusto. Ajusta la consistencia con agua si es necesario.
+                        <br>
+                        3. Refrigera el gazpacho durante al menos 2 horas para que esté bien frío.
+                        <br>
+                        4. Antes de servir, añade las rodajas de pepino remojadas.
+                        <br>
+                        5. Sirve el gazpacho acompañado de pan integral y palitos de verduras frescas como zanahoria,
+                        pimiento, apio, etc.
+                    </p>
+
+                    <!-- <div id="botones-receta">
+                        <button class="problema1">Escuchar</button>
+                        <button class="btPause1">Pausar</button>
+                        <button class="btReanudar1">Reanudar</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ... Las demás tarjetas siguen el mismo patrón ... -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="footer">
+                <h2>ComidSalud</h2>
+                <p>Todos los derechos reservados &copy 2023 Bryan Espinoza</p>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Busqueda -->
+    <script src="js/busquedavoz.js"></script>
+
+</body>
+
+</html>

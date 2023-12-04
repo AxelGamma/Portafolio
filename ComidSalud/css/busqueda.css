@@ -1,0 +1,69 @@
+@import url(colores.css);
+/* Estilo de barra de busqueda */
+
+.busqueda {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .busqueda-container {
+    width: 30%;
+    background-color: #2d3250;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .busqueda-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+ }
+ .busqueda-container input {
+    width: 95%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--quinary-color);
+    background-color: #424769;
+ }
+ 
+ .busqueda-container .derbtn {
+    width: 20%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--quinary-color);
+    cursor: pointer;
+    transition: all 300ms ease;
+ }
+/*  .busqueda-container .izqubtn {
+    width: 20%;
+    border: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--quinary-color);
+    cursor: pointer;
+    transition: all 300ms ease;
+ } */
+ .busqueda-container button:hover{
+    background-color: var(--quinario-color);
+    
+ }
+ /* Contenedor flex horizontal  */
+ #content-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+ }

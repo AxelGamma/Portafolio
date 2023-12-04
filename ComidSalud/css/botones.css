@@ -1,0 +1,35 @@
+@import url(colores.css);
+
+.content-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.content-botones button {
+    display: block;
+    width: 30%;
+    padding: .5rem;
+    background-color: var(--quinary-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin: 0 auto;
+}
+
+
+.content-botones button:hover,
+#botones-receta button:hover {
+    box-shadow: 0px 0px 20px 0px var(--primary-color);
+    transform: scale(1.1);
+}

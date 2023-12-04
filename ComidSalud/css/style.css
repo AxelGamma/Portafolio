@@ -1,0 +1,533 @@
+@import url(colores.css);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Fira Sans', sans-serif;
+
+}
+
+/* Index.html */
+/* Barra de navegacion fija */
+
+.nav-bg {
+   background-color: var(--primary-color);
+   color: var(--quinary-color);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 100;
+   transition: all 300ms ease;
+}
+
+.nav-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 30px;
+   height: 50px;
+   width: 53rem;
+   margin: 0 auto;
+}
+
+.nav-container a {
+   color: var(--quinary-color);
+   text-decoration: none;
+   margin-left: 20px;
+   font-size: 1.2rem;
+   font-weight: 700;
+   transition: all 300ms ease;
+}
+
+.nav-container a:hover {
+   color: var(--primary-color);
+   background-color: var(--quinary-color);
+   padding: 5px;
+   border-radius: 5px;
+}
+
+.contenedor-hero {
+   position: relative;
+}
+
+.contenedor-titulo {
+   position: absolute;
+   background-color: rgb(0 0 0 / 50%);
+   width: 100%;
+   height: 100%;
+
+   /* Alinear con flex las letras tanto vertical y horizontalmente */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* titulo */
+   color: var(--quinary-color);
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.contenedor-titulo h1 {
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.contenedor-titulo h2 {
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+}
+
+.titulo {
+   color: var(--quinary-color);
+   font-size: 1.5rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-right: auto;
+}
+
+.parallax {
+   background-image: url(../img/comida_salud.jpg);
+   /* Set a specific height */
+   min-height: 500px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+/* Main */
+
+.informacion-container {
+   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.76);
+   border-radius: 15px;
+   margin: 0 1rem;
+}
+
+.bienvenida {
+   text-align: center;
+   padding-top: 1rem;
+   margin: 20px;
+   color: var(--primary-color);
+   font-size: 1.5rem;
+}
+
+.bienvenida h1 {
+
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+}
+
+.contenedor-iconosBienvenida {
+   width: 20%;
+   margin: 0 auto;
+}
+
+.iconosBienvenida {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.fondodieta {
+   position: relative;
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: var(--primary-color);
+   text-transform: uppercase;
+   background-image: url(../img/fondoDieta.jpg);
+   background-size: cover;
+   width: 50rem;
+   margin: 0 auto;
+   padding: 150px 20px;
+   border-radius: 15px;
+   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.76);
+}
+
+.informacion-dieta {
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0.737);
+   text-align: center;
+   bottom: 0px;
+   left: 0px;
+   border-bottom-right-radius: 1rem;
+   border-bottom-left-radius: 1rem;
+}
+
+.informacion-dieta h2 {
+   color: var(--quinary-color);
+}
+
+.informacion-dieta p {
+   color: var(--quaternary-color);
+}
+
+/* Contenedor informacion */
+
+.container-datos {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 1rem;
+   margin: 1rem;
+}
+
+.datosDieta {
+   background-color: var(--primary-color);
+   margin: 1rem auto;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.76);
+   width: 20rem;
+   height: 25rem;
+}
+
+.datosDieta:hover {
+   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.76);
+   transform: scale(1.1);
+   transition: all 300ms ease;
+}
+
+.datosDieta h3 {
+   color: var(--quinary-color);
+   font-size: 1.5rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   margin-top: 1rem;
+   text-align: center;
+}
+
+.datosDieta p {
+   color: var(--blanco);
+   font-size: 1rem;
+   font-weight: 300;
+   margin-bottom: 20px;
+
+}
+
+/* Img Datos dieta */
+
+.informacion-dieta-img {
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   background-color: var(--blanco);
+   margin: 0 auto;
+}
+
+.informacion-dieta-img img {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+}
+
+/* Contacto */
+
+.contactanos {
+   padding: 1rem;
+}
+
+.formulario {
+   background-color: var(--primary-color);
+   /* min utiliza el valor mas pequeño */
+   width: min(50rem, 100%);
+
+   /* Centrar el form */
+   margin: 0 auto;
+   margin-bottom: 2rem;
+
+   padding: 2rem;
+   border-radius: 1rem;
+}
+
+.formulario fieldset {
+   border: none;
+}
+
+.formulario legend {
+   margin: 0 auto;
+   font-size: 1.8rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-bottom: 2rem;
+   color: var(--quinary-color);
+}
+
+/* Css a los inputs */
+
+@media (min-width: 768px) {
+   .contenedor-campos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto auto;
+      column-gap: 1rem;
+
+   }
+
+   /* Con nth-chile podemos seleccionar mediante un numero la clase que queramos */
+   .campo:nth-child(3),
+   .campo:nth-child(4) {
+      /* Para posicionar un elemento utilizamos grid_column */
+      grid-column: 1 / 3;
+   }
+}
+
+.campo {
+   margin-bottom: 1rem;
+}
+
+.campo label {
+   color: var(--blanco);
+   font-weight: bold;
+   margin-bottom: .5rem;
+   display: block;
+}
+
+/* Aplicando selector de atributo */
+/* .campo input[type="text"] {
+   background-color: red;
+} */
+
+.input-text {
+   width: 100%;
+   border: none;
+   border-radius: .5rem;
+   margin: 0;
+   padding: 1rem;
+}
+.input-text:focus {
+   outline: none;
+}
+
+.campo textarea {
+   width: 46rem;
+   height: 10rem;
+   border: none;
+   padding: 1.5rem;
+   border-radius: .5rem;
+
+   outline: none;
+}
+
+.boton-enviar button {
+   display: block;
+   width: 20%;
+   padding: .5rem;
+   background-color: var(--quinary-color);
+   color: var(--primary-color);
+   font-size: 1rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   border: none;
+   border-radius: .5rem;
+   cursor: pointer;
+   transition: all 300ms ease;
+}
+
+.boton-enviar button:hover {
+   box-shadow: 0px 0px 20px 0px var(--quinary-color);
+   transform: scale(1.1);
+}
+
+/* Problemas de alimentacion lista */
+.problemas-alimentacion {
+   background-color: var(--primary-color);
+   margin: 0 1rem;
+   margin-bottom: 2rem;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.76);
+}
+
+.problemas-alimentacion p {
+   text-align: center;
+   color: var(--blanco);
+}
+
+.problemas-alimentacion h2 {
+   color: var(--quinary-color);
+   font-size: 2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   margin-top: 1rem;
+   text-align: center;
+
+}
+
+.container-alimentacion {
+   /* Van a ser tarjetas pero en vertical */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto;
+   width: 100%;
+   padding: 1rem;
+}
+
+.problema {
+   display: flex;
+   background-color: var(--blanco);
+   margin: 0 1rem;
+   margin-bottom: 2rem;
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.76);
+   width: 50%;
+}
+
+.alimentacion-img {
+   width: 10rem;
+   height: 10rem;
+   border-radius: 50%;
+   background-color: var(--blanco);
+   margin: 0 auto;
+
+}
+
+.alimentacion-img img {
+   width: 10rem;
+   height: 10rem;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.alimentacion-info {
+   margin-left: 1rem;
+}
+
+.alimentacion-info h3 {
+   color: var(--primary-color);
+   font-size: 1.5rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   margin-top: 1rem;
+   text-align: center;
+
+}
+
+.alimentacion-info p {
+   text-align: left;
+   color: var(--primary-color);
+   font-size: 1rem;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+
+
+
+footer {
+   background-color: var(--primary-color);
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+   margin-top: auto; /* Coloca el footer al final del contenedor padre (body en este caso) */
+}
+.footer p {
+   color: var(--quinary-color);
+}
+.footer h2{
+   color: var(--quinary-color);
+
+}
+
+.contenedor-footer {
+   width: 100%;
+}
+
+.footer {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/* Tarjetas */
+/* Estilos para las tarjetas */
+/* Estilos para las tarjetas */
+.tarjeta {
+   display: flex;
+   border: 1px solid #ddd;
+   padding: 15px;
+   margin: 10px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+}
+
+.imagen-receta {
+   margin-right: 15px;
+   /* Espaciado entre la imagen y el contenido de la tarjeta */
+}
+
+.imagen-receta img {
+   width: 200px;
+   height: 200px;
+   /* Ajustar la imagen */
+   object-fit: cover;
+   /* Ajusta el ancho de la imagen según tus necesidades */
+   border-radius: 8px;
+   /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para el contenido de la tarjeta */
+.tarjeta .contenido {
+   flex: 1;
+   /* El contenido ocupa el espacio restante en la tarjeta */
+}
+
+.tarjeta h3 {
+   font-size: 1.5em;
+   color: #333;
+   margin-bottom: 10px;
+}
+
+.tarjeta p {
+   font-size: 1em;
+   color: #666;
+}
+
+/* Estilo contenedor botones */
+#botones-receta {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 1rem;
+}
+
+#botones-receta button {
+   padding: .5rem;
+   background-color: var(--quinary-color);
+   color: var(--primary-color);
+   font-size: 1rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   border: none;
+   border-radius: .5rem;
+   cursor: pointer;
+   transition: all 300ms ease;
+   margin: 0 1rem;
+
+}
+
+/* Titulo recetas */
+.titulo-recetas {
+   color: var(--primary-color);
+   font-size: 2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   margin-top: 1rem;
+   text-align: center;
+}
+
+.contenido h3 {
+   text-transform: uppercase;
+}

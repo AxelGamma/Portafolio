@@ -193,6 +193,11 @@ h2 {
     border-top: 1px solid var(--secundario-color);
     border-bottom: 1px solid var(--secundario-color);
 }
+.content-modal span{
+    font-weight: 700;
+    color: var(--quinario-color);
+
+}
 
 .content-modal .btn-cerrar {
     width: 100%;

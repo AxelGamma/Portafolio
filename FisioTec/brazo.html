@@ -26,7 +26,7 @@
         rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.rawgit.com/madfriend/jquery.totemticker/master/jquery.totemticker.min.js"></script>
 
 
@@ -45,836 +45,936 @@
                     </a>
                 </div>
                 <nav class="nav-container">
-                    <a href="./index.html">Inicio</a>
+                    <a href="/index.html">Inicio</a>
                     <a href="/index.html">Que es la Fisioterapia</a>
                     <a href="./Brazo.html">Fisioterapia Brazo</a>
-                    <a href="/index.html">Contacto</a>
                 </nav>
             </section>
+            <!-- Añade este código en tu HTML donde quieras colocar el buscador por voz -->
+            <div class="busqueda">
+                <div class="busqueda-container">
+                    <form id="voiceSearchForm">
+                        <input type="text" id="voiceSearchInput" placeholder="Buscar por voz...">
+                        <button type="button" class="derbtn" id="voiceSearchButton">
+                            <img src="img/microfono.png" alt="Micrófono">
+                        </button>
+                    </form>
+                </div>
+            </div>
+
         </header>
     </section>
 
-    <!-- TARJETAS -->
-    <section class="tituloCubito">
-        <h2>Cubito</h2>
-        <p id="icub">El "cúbito" es uno de los dos huesos largos del antebrazo en los seres humanos y en la mayoría de
-            los
-            vertebrados terrestres. El otro hueso del antebrazo es el radio. El cúbito y el radio corren paralelos entre
-            sí, lo que permite la flexión y la extensión del antebrazo.
-            <br>
-            El cúbito se encuentra en el lado medial (interno) del antebrazo y se extiende desde el codo hasta la
-            muñeca. En el codo, el cúbito forma la articulación del codo con el hueso del húmero, lo que permite la
-            flexión y la extensión del antebrazo. El radio, por otro lado, se encuentra en el lado lateral (externo) del
-            antebrazo y gira sobre el cúbito durante la pronación y la supinación, lo que permite que la palma de la
-            mano se gire hacia arriba o hacia abajo.
-            <br>
-            El cúbito es un hueso importante para la función del brazo y la mano, ya que desempeña un papel fundamental
-            en la movilidad y la estabilidad del codo. Lesiones o condiciones que afecten al cúbito pueden requerir
-            fisioterapia o tratamiento médico para recuperar la función normal de la articulación y el antebrazo.
-        </p>
-        <div class="contenedorBotones">
-            <button type="submit" class="btninfoCub">Escuchar texto</button>
-            <button type="submit" class="btPausecub">Pausar</button>
-            <button type="submit" class="btReanudarcub">Reanudar</button>
-        </div>
-    </section>
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/cub1.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Movilización pasiva y estiramientos:</h3>
-            <p id="infcub1">Un fisioterapeuta puede realizar movilizaciones pasivas del cúbito para restaurar la
-                movilidad articular.
-                También pueden recomendar estiramientos suaves para mejorar la flexibilidad del codo y el antebrazo.
-            </p>
 
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal1">Saber más...</label>
 
-                </div>
-                <button type="submit" class="btninfoCub1">Escuchar texto</button>
-                <button type="submit" class="btPausecub1">Pausar</button>
-                <button type="submit" class="btReanudarcub1">Reanudar</button>
-            </div>
 
-        </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal1">
-    <div class="container-modal1">
-        <div class="content-modal">
-            <h2>Movilización pasiva y estiramientos:</h2>
-
-            <ul>
-                <li><span>Movilización pasiva:</span> La movilización pasiva es una técnica que implica que un
-                    fisioterapeuta aplique
-                    fuerza o presión controlada sobre la articulación del cúbito para ayudar a restaurar su movilidad.
-                    Esta técnica se utiliza para tratar la rigidez articular y mejorar la capacidad de flexión y
-                    extensión del codo.</li>
+    <section class="Cubito">
+        <!-- TARJETAS -->
+        <section class="tituloCubito">
+            <h2>Cubito</h2>
+            <p id="icub">El "cúbito" es uno de los dos huesos largos del antebrazo en los seres humanos y en la mayoría
+                de
+                los
+                vertebrados terrestres. El otro hueso del antebrazo es el radio. El cúbito y el radio corren paralelos
+                entre
+                sí, lo que permite la flexión y la extensión del antebrazo.
                 <br>
-                <li><span>Estiramientos: </span>Los estiramientos suaves del cúbito y los músculos circundantes se
-                    realizan para aumentar la flexibilidad y reducir la tensión en la región del antebrazo y el codo. Un
-                    ejemplo de estiramiento es el estiramiento del tríceps, que se logra estirando el brazo por encima
-                    de la cabeza y doblando el codo hacia abajo.</li>
-            </ul>
-            <!-- Lista sin numeros -->
-
-
-
-            <!-- Botón de apertura de modal -->
+                El cúbito se encuentra en el lado medial (interno) del antebrazo y se extiende desde el codo hasta la
+                muñeca. En el codo, el cúbito forma la articulación del codo con el hueso del húmero, lo que permite la
+                flexión y la extensión del antebrazo. El radio, por otro lado, se encuentra en el lado lateral (externo)
+                del
+                antebrazo y gira sobre el cúbito durante la pronación y la supinación, lo que permite que la palma de la
+                mano se gire hacia arriba o hacia abajo.
+                <br>
+                El cúbito es un hueso importante para la función del brazo y la mano, ya que desempeña un papel
+                fundamental
+                en la movilidad y la estabilidad del codo. Lesiones o condiciones que afecten al cúbito pueden requerir
+                fisioterapia o tratamiento médico para recuperar la función normal de la articulación y el antebrazo.
+            </p>
             <div class="contenedorBotones">
+                <button type="submit" class="btninfoCub">Escuchar texto</button>
+                <button type="submit" class="btPausecub">Pausar</button>
+                <button type="submit" class="btReanudarcub">Reanudar</button>
+            </div>
+        </section>
+        <div class="tarjeta tarjeta1">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/cub1.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Movilización pasiva y estiramientos:</h3>
+                <p id="infcub1">Un fisioterapeuta puede realizar movilizaciones pasivas del cúbito para restaurar la
+                    movilidad articular.
+                    También pueden recomendar estiramientos suaves para mejorar la flexibilidad del codo y el antebrazo.
+                </p>
+
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://youtu.be/KVBTmnUz5p4?si=5gOvent-H6Q4zyRA" target="_blank">Saber más...</a>
+                        </label>
+
+                    </div>
+                    <button type="submit" class="btninfoCub1">Escuchar texto</button>
+                    <button type="submit" class="btPausecub1">Pausar</button>
+                    <button type="submit" class="btReanudarcub1">Reanudar</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal1">
+        <div class="container-modal1">
+            <div class="content-modal">
+                <h2>Movilización pasiva y estiramientos:</h2>
+
+                <ul>
+                    <li><span>Movilización pasiva:</span> La movilización pasiva es una técnica que implica que un
+                        fisioterapeuta aplique
+                        fuerza o presión controlada sobre la articulación del cúbito para ayudar a restaurar su
+                        movilidad.
+                        Esta técnica se utiliza para tratar la rigidez articular y mejorar la capacidad de flexión y
+                        extensión del codo.</li>
+                    <br>
+                    <li><span>Estiramientos: </span>Los estiramientos suaves del cúbito y los músculos circundantes se
+                        realizan para aumentar la flexibilidad y reducir la tensión en la región del antebrazo y el
+                        codo. Un
+                        ejemplo de estiramiento es el estiramiento del tríceps, que se logra estirando el brazo por
+                        encima
+                        de la cabeza y doblando el codo hacia abajo.</li>
+                </ul>
+                <!-- Botón de apertura de modal -->
                 <div class="btn-cerrar">
                     <label for="btn-modal1">Cerrar</label>
                 </div>
-                <button type="submit" class="btninfoCub1">Escuchar texto</button>
-                <button type="submit" class="btPausecub1">Pausar</button>
-                <button type="submit" class="btReanudarcub1">Reanudar</button>
             </div>
+            <label for="btn-modal1" class="cerrar-modal"></label>
         </div>
-        <label for="btn-modal1" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 1 -->
+        <!-- Fin tarjeta 1 -->
 
-    <!-- TARJETA 2 -->
-    <!-- Fin de ventana modal -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/cub2.jpeg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Fortalecimiento muscular: </h3>
-            <p id="infcub2">Ejercicios de fortalecimiento de los músculos del antebrazo, como los flexores y extensores,
-                pueden
-                ayudar a mejorar la estabilidad del codo y la fuerza en la región del cúbito.
-            </p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal2">Saber más...</label>
-
+        <!-- TARJETA 2 -->
+        <!-- Fin de ventana modal -->
+        <div class="tarjeta tarjeta2">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/cub2.jpeg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Fortalecimiento muscular: </h3>
+                <p id="infcub2">Ejercicios de fortalecimiento de los músculos del antebrazo, como los flexores y
+                    extensores,
+                    pueden
+                    ayudar a mejorar la estabilidad del codo y la fuerza en la región del cúbito.
+                </p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=F9Wa_vkELKI&ab_channel=FisioOnline"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub2">Escuchar texto</button>
+                    <button type="submit" class="btPausecub2">Pausar</button>
+                    <button type="submit" class="btReanudarcub2">Reanudar</button>
                 </div>
-                <button type="submit" class="btninfoCub2">Escuchar texto</button>
-                <button type="submit" class="btPausecub2">Pausar</button>
-                <button type="submit" class="btReanudarcub2">Reanudar</button>
             </div>
         </div>
-    </div>
-    <!-- Ventana modal Fortalecimiento muscular -->
-    <input type="checkbox" id="btn-modal2">
-    <div class="container-modal2">
-        <div class="content-modal">
-            <h2>Fortalecimiento muscular:</h2>
-            <p>Otro ejercicios que puedes implementar son:</p>
-            <ul>
-                <li>Los ejercicios de fortalecimiento para el cúbito incluyen movimientos que trabajan los músculos
-                    flexores y extensores del antebrazo y el codo.</li>
+        <!-- Ventana modal Fortalecimiento muscular -->
+        <input type="checkbox" id="btn-modal2">
+        <div class="container-modal2">
+            <div class="content-modal">
+                <h2>Fortalecimiento muscular:</h2>
+                <p>Otro ejercicios que puedes implementar son:</p>
+                <ul>
+                    <li>Los ejercicios de fortalecimiento para el cúbito incluyen movimientos que trabajan los músculos
+                        flexores y extensores del antebrazo y el codo.</li>
 
-                <li>Ejemplos de ejercicios incluyen la flexión de muñeca (trabajo de los flexores) y la extensión de
-                    muñeca (trabajo de los extensores).</li>
-                <li>El fortalecimiento muscular es esencial para recuperar la fuerza en el cúbito después de una lesión
-                    o para prevenir futuras lesiones.</li>
-            </ul>
-            <div class="btn-cerrar"><label for="btn-modal2">Cerrar</label></div>
+                    <li>Ejemplos de ejercicios incluyen la flexión de muñeca (trabajo de los flexores) y la extensión de
+                        muñeca (trabajo de los extensores).</li>
+                    <li>El fortalecimiento muscular es esencial para recuperar la fuerza en el cúbito después de una
+                        lesión
+                        o para prevenir futuras lesiones.</li>
+                </ul>
+                <div class="btn-cerrar"><label for="btn-modal2">Cerrar</label></div>
+            </div>
+            <label for="btn-modal2" class="cerrar-modal"></label>
         </div>
-        <label for="btn-modal2" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 2 -->
-    <!-- TARJETA 3 -->
-    <!-- Fin de ventana modal -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/cub3.webp" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Terapia manual: </h3>
-            <p id="infcub3"> La terapia manual, que incluye masajes y técnicas de liberación miofascial, puede ayudar a
-                aliviar la
-                tensión y la rigidez en los músculos y tejidos circundantes al cúbito.</p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal3">Saber más...</label>
-
+        <!-- Fin tarjeta 2 -->
+        <!-- TARJETA 3 -->
+        <!-- Fin de ventana modal -->
+        <div class="tarjeta tarjeta3">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/cub3.webp" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Terapia manual: </h3>
+                <p id="infcub3"> La terapia manual, que incluye masajes y técnicas de liberación miofascial, puede
+                    ayudar a
+                    aliviar la
+                    tensión y la rigidez en los músculos y tejidos circundantes al cúbito.</p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=NO6qrCfeYxg&ab_channel=PHYSIOCIENCIA"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub3">Escuchar texto</button>
+                    <button type="submit" class="btPausecub3">Pausar</button>
+                    <button type="submit" class="btReanudarcub3">Reanudar</button>
                 </div>
-                <button type="submit" class="btninfoCub3">Escuchar texto</button>
-                <button type="submit" class="btPausecub3">Pausar</button>
-                <button type="submit" class="btReanudarcub3">Reanudar</button>
             </div>
         </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal3">
-    <div class="container-modal3">
-        <div class="content-modal">
-            <h2>Terapia manual:</h2>
-            <p>Otras terapias manuales que puedes implementar son:</p>
-            <ul>
-                <li>La terapia manual implica el uso de las manos del fisioterapeuta para aplicar presión, masaje y
-                    técnicas de liberación miofascial en los músculos, tendones y tejidos circundantes al cúbito.</li>
-                <li>Esta terapia puede ayudar a aliviar la tensión y la rigidez, promoviendo la relajación y la
-                    circulación sanguínea en la zona afectada.</li>
-                <li>Puede ser especialmente útil en casos de dolor crónico o tensión muscular.</li>
-            </ul>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal3">
+        <div class="container-modal3">
+            <div class="content-modal">
+                <h2>Terapia manual:</h2>
+                <p>Otras terapias manuales que puedes implementar son:</p>
+                <ul>
+                    <li>La terapia manual implica el uso de las manos del fisioterapeuta para aplicar presión, masaje y
+                        técnicas de liberación miofascial en los músculos, tendones y tejidos circundantes al cúbito.
+                    </li>
+                    <li>Esta terapia puede ayudar a aliviar la tensión y la rigidez, promoviendo la relajación y la
+                        circulación sanguínea en la zona afectada.</li>
+                    <li>Puede ser especialmente útil en casos de dolor crónico o tensión muscular.</li>
+                </ul>
 
-            <div class="btn-cerrar"><label for="btn-modal3">Cerrar</label></div>
+                <div class="btn-cerrar"><label for="btn-modal3">Cerrar</label></div>
+            </div>
+            <label for="btn-modal3" class="cerrar-modal"></label>
         </div>
-        <label for="btn-modal3" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 3 -->
-    <!-- TARJETA 4 -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/cub4.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Ejercicios de pronación y supinación:</h3>
-            <p id="infcub4">Los ejercicios de pronación y supinación son esenciales para mejorar la capacidad de girar
-                el cúbito, lo
-                que es importante para actividades cotidianas. A continuación, te mostramos algunos ejercicios para
-                trabajar estos movimientos.</p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal4">Saber más...</label>
-
+        <!-- Fin tarjeta 3 -->
+        <!-- TARJETA 4 -->
+        <div class="tarjeta tarjeta4">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/cub4.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Ejercicios de pronación y supinación:</h3>
+                <p id="infcub4">Los ejercicios de pronación y supinación son esenciales para mejorar la capacidad de
+                    girar
+                    el cúbito, lo
+                    que es importante para actividades cotidianas. A continuación, te mostramos algunos ejercicios para
+                    trabajar estos movimientos.</p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/shorts/X5HQ34_y7vU" target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub4">Escuchar texto</button>
+                    <button type="submit" class="btPausecub4">Pausar</button>
+                    <button type="submit" class="btReanudarcub4">Reanudar</button>
                 </div>
-                <button type="submit" class="btninfoCub4">Escuchar texto</button>
-                <button type="submit" class="btPausecub4">Pausar</button>
-                <button type="submit" class="btReanudarcub4">Reanudar</button>
             </div>
         </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal4">
-    <div class="container-modal4">
-        <div class="content-modal">
-            <h2>Ejercicios de pronación y supinación</h2>
-            <p>Otros ejercicios que puedes implementar son los siguientes:</p>
-            <ul>
-                <li>Los ejercicios de pronación y supinación implican rotar el cúbito para mejorar la capacidad de girar
-                    la palma hacia arriba (supinación) o hacia abajo (pronación).</li>
-                <li>Estos ejercicios ayudan a mantener la movilidad y la fuerza en el cúbito, lo que es esencial para
-                    actividades cotidianas como girar una llave o abrir una puerta.</li>
-            </ul>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal4">
+        <div class="container-modal4">
+            <div class="content-modal">
+                <h2>Ejercicios de pronación y supinación</h2>
+                <p>Otros ejercicios que puedes implementar son los siguientes:</p>
+                <ul>
+                    <li>Los ejercicios de pronación y supinación implican rotar el cúbito para mejorar la capacidad de
+                        girar
+                        la palma hacia arriba (supinación) o hacia abajo (pronación).</li>
+                    <li>Estos ejercicios ayudan a mantener la movilidad y la fuerza en el cúbito, lo que es esencial
+                        para
+                        actividades cotidianas como girar una llave o abrir una puerta.</li>
+                </ul>
 
-            <div class="btn-cerrar"><label for="btn-modal4">Cerrar</label></div>
+                <div class="btn-cerrar"><label for="btn-modal4">Cerrar</label></div>
+            </div>
+            <label for="btn-modal4" class="cerrar-modal"></label>
         </div>
-        <label for="btn-modal4" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 4 -->
-    <!-- TARJETA 5 -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/cub5.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Terapia de ultrasonido y compresión fría/calor:</h3>
-            <p id="infcub5">El uso de ultrasonido y terapia de frío/calor puede ayudar a reducir la inflamación y
-                promover la
-                circulación sanguínea en la zona afectada.</p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal5">Saber más...</label>
-
+        <!-- Fin tarjeta 4 -->
+        <!-- TARJETA 5 -->
+        <div class="tarjeta tarjeta5">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/cub5.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Terapia de ultrasonido y compresión fría/calor:</h3>
+                <p id="infcub5">El uso de ultrasonido y terapia de frío/calor puede ayudar a reducir la inflamación y
+                    promover la
+                    circulación sanguínea en la zona afectada.</p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=O9tm-QVOrbI&ab_channel=FREMAPMUTUACOLABORADORACONLAS.SOCIALN.61"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub5">Escuchar texto</button>
+                    <button type="submit" class="btPausecub5">Pausar</button>
+                    <button type="submit" class="btReanudarcub5">Reanudar</button>
                 </div>
-                <button type="submit" class="btninfoCub5">Escuchar texto</button>
-                <button type="submit" class="btPausecub5">Pausar</button>
-                <button type="submit" class="btReanudarcub5">Reanudar</button>
             </div>
         </div>
-    </div>
 
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal5">
-    <div class="container-modal5">
-        <div class="content-modal">
-            <h2>Terapia de ultrasonido y compresión fria/calor</h2>
-            <p>Otras terapias que puedes implementar son:</p>
-            <ul>
-                <li>La terapia de ultrasonido utiliza ondas sonoras de alta frecuencia para generar calor en los tejidos
-                    profundos, lo que puede aumentar la circulación sanguínea y reducir la inflamación.</li>
-                <li>La compresión fría/calor implica la aplicación de hielo o calor en la zona afectada. El hielo se
-                    utiliza para reducir la inflamación, mientras que el calor puede relajar los músculos y mejorar la
-                    circulación.</li>
-                <li>Estas terapias son complementarias a otros tratamientos y pueden ser recomendadas por un
-                    fisioterapeuta según las necesidades individuales del paciente.</li>
-            </ul>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal5">
+        <div class="container-modal5">
+            <div class="content-modal">
+                <h2>Terapia de ultrasonido y compresión fria/calor</h2>
+                <p>Otras terapias que puedes implementar son:</p>
+                <ul>
+                    <li>La terapia de ultrasonido utiliza ondas sonoras de alta frecuencia para generar calor en los
+                        tejidos
+                        profundos, lo que puede aumentar la circulación sanguínea y reducir la inflamación.</li>
+                    <li>La compresión fría/calor implica la aplicación de hielo o calor en la zona afectada. El hielo se
+                        utiliza para reducir la inflamación, mientras que el calor puede relajar los músculos y mejorar
+                        la
+                        circulación.</li>
+                    <li>Estas terapias son complementarias a otros tratamientos y pueden ser recomendadas por un
+                        fisioterapeuta según las necesidades individuales del paciente.</li>
+                </ul>
 
-            <div class="btn-cerrar"><label for="btn-modal5">Cerrar</label></div>
+                <div class="btn-cerrar"><label for="btn-modal5">Cerrar</label></div>
+            </div>
+            <label for="btn-modal5" class="cerrar-modal"></label>
         </div>
-        <label for="btn-modal5" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin de ventana modal -->
-    <!-- Fin tarjeta 5 -->
+        <!-- Fin de ventana modal -->
+        <!-- Fin tarjeta 5 -->
 
+    </section>
 
     <!-- Inicio de Humero -->
-    <section class="tituloCubito">
-        <h2>Húmero</h2>
-        <p id="infcub6">El húmero es el hueso largo del brazo humano que se extiende desde el hombro hasta el codo.
-            Tiene
-            una cabeza en el extremo superior que se articula con la escápula, una diáfisis larga y dos cóndilos en el
-            extremo inferior que se articulan con el cúbito y el radio en la articulación del codo. El húmero permite
-            movimientos esenciales en el brazo, como la flexión, la extensión y la rotación. Puede sufrir lesiones, como
-            fracturas, que requieren tratamiento médico. En resumen, el húmero es un hueso fundamental para la función y
-            movilidad del brazo humano.
-        </p>
-        <div class="contenedorBotones">
-            <button type="submit" class="btninfoCub6">Escuchar texto</button>
-            <button type="submit" class="btPausecub6">Pausar</button>
-            <button type="submit" class="btReanudarcub6">Reanudar</button>
+    <section class="Humero">
+        <section class="tituloCubito">
+            <h2>Húmero</h2>
+            <p id="infcub6">El húmero es el hueso largo del brazo humano que se extiende desde el hombro hasta el codo.
+                Tiene
+                una cabeza en el extremo superior que se articula con la escápula, una diáfisis larga y dos cóndilos en
+                el
+                extremo inferior que se articulan con el cúbito y el radio en la articulación del codo. El húmero
+                permite
+                movimientos esenciales en el brazo, como la flexión, la extensión y la rotación. Puede sufrir lesiones,
+                como
+                fracturas, que requieren tratamiento médico. En resumen, el húmero es un hueso fundamental para la
+                función y
+                movilidad del brazo humano.
+            </p>
+            <div class="contenedorBotones">
+                <button type="submit" class="btninfoCub6">Escuchar texto</button>
+                <button type="submit" class="btPausecub6">Pausar</button>
+                <button type="submit" class="btReanudarcub6">Reanudar</button>
+            </div>
+        </section>
+        <div class="tarjeta tarjeta6">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/hum1.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Movilización pasiva del hombro:</h3>
+                <p id="infcub7">Este ejercicio se realiza con la ayuda de un fisioterapeuta. Consiste en mover
+                    suavemente el
+                    brazo y el
+                    hombro lesionados a través de su rango de movimiento completo. Esto ayuda a prevenir la rigidez y
+                    mejorar la flexibilidad de la articulación del hombro.
+                </p>
+
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=d2aO30cpenA&ab_channel=Traumatolog%C3%ADaVistahermosa"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub7">Escuchar texto</button>
+                    <button type="submit" class="btPausecub7">Pausar</button>
+                    <button type="submit" class="btReanudarcub7">Reanudar</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal6">
+        <div class="container-modal6">
+            <div class="content-modal">
+                <h2>Movilización pasiva y estiramientos:</h2>
+
+                <ul>
+                    <li><span>Movilización pasiva del hombro:</span>Además de la movilización pasiva, tu fisioterapeuta
+                        puede utilizar técnicas manuales como estiramientos, movilizaciones articulares y técnicas de
+                        tejido
+                        blando para mejorar la movilidad del hombro. Estas técnicas ayudan a reducir la rigidez y el
+                        dolor
+                        en la articulación.</li>
+                </ul>
+                <!-- Lista sin numeros -->
+
+
+                <div class="btn-cerrar"><label for="btn-modal6">Cerrar</label></div>
+            </div>
+            <label for="btn-modal6" class="cerrar-modal"></label>
+        </div>
+        <!-- Fin tarjeta 1 -->
+
+        <!-- TARJETA 2 -->
+        <!-- Fin de ventana modal -->
+        <div class="tarjeta tarjeta7">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/hum2.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Estiramientos: </h3>
+                <p id="infcub8">Estiramiento del deltoides: Para estirar el músculo deltoides, puedes extender el brazo
+                    no
+                    lesionado y
+                    utilizar la mano sana para tirar suavemente del brazo lesionado hacia el lado opuesto.
+                    <br>
+                    Estiramiento del tríceps: Para estirar el tríceps, dobla el brazo lesionado por encima de la cabeza
+                    y
+                    use la mano sana para aplicar una suave presión en el codo.
+                </p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=dOmT0JCuTZg&ab_channel=Fisioterapiaatualcance"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub8">Escuchar texto</button>
+                    <button type="submit" class="btPausecub8">Pausar</button>
+                    <button type="submit" class="btReanudarcub8">Reanudar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal Fortalecimiento muscular -->
+        <input type="checkbox" id="btn-modal7">
+        <div class="container-modal7">
+            <div class="content-modal">
+                <h2>Estiramiento:</h2>
+                <p id="">Otro ejercicios que puedes implementar son:</p>
+                <ul>
+                    <li>Los ejercicios de fortalecimiento para el cúbito incluyen movimientos que trabajan los músculos
+                        flexores y extensores del antebrazo y el codo.</li>
+
+                    <li>Ejemplos de ejercicios incluyen la flexión de muñeca (trabajo de los flexores) y la extensión de
+                        muñeca (trabajo de los extensores).</li>
+                    <li>El fortalecimiento muscular es esencial para recuperar la fuerza en el cúbito después de una
+                        lesión
+                        o para prevenir futuras lesiones.</li>
+                </ul>
+                <div class="btn-cerrar"><label for="btn-modal7">Cerrar</label></div>
+            </div>
+            <label for="btn-modal7" class="cerrar-modal"></label>
+        </div>
+        <!-- Fin tarjeta 2 -->
+        <!-- TARJETA 3 -->
+        <!-- Fin de ventana modal -->
+        <div class="tarjeta tarjeta8">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/hum3.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Fortalecimiento:</h3>
+                <p id="infcub9">Fortalecimiento: Elevaciones laterales con banda elástica: Ata una banda elástica a un
+                    punto
+                    fijo y sostén
+                    el extremo con
+                    la mano lesionada. Luego, realiza elevaciones laterales del brazo.
+                    <br>
+                    Elevaciones frontales con pesas ligeras: Utiliza pesas ligeras para realizar elevaciones frontales
+                    del
+                    brazo. Esto ayudará a fortalecer los músculos del hombro.
+                </p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=o_dItVej1uA&ab_channel=FisioOnline"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub9">Escuchar texto</button>
+                    <button type="submit" class="btPausecub9">Pausar</button>
+                    <button type="submit" class="btReanudarcub9">Reanudar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal8">
+        <div class="container-modal8">
+            <div class="content-modal">
+                <h2>Terapia manual:</h2>
+                <p>Otras terapias manuales que puedes implementar son:</p>
+                <ul>
+                    <li>La terapia manual implica el uso de las manos del fisioterapeuta para aplicar presión, masaje y
+                        técnicas de liberación miofascial en los músculos, tendones y tejidos circundantes al cúbito.
+                    </li>
+                    <li>Esta terapia puede ayudar a aliviar la tensión y la rigidez, promoviendo la relajación y la
+                        circulación sanguínea en la zona afectada.</li>
+                    <li>Puede ser especialmente útil en casos de dolor crónico o tensión muscular.</li>
+                </ul>
+
+                <div class="btn-cerrar"><label for="btn-modal8">Cerrar</label></div>
+            </div>
+            <label for="btn-modal8" class="cerrar-modal"></label>
+        </div>
+        <!-- Fin tarjeta 3 -->
+        <!-- TARJETA 4 -->
+        <div class="tarjeta tarjeta9">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/hum4.webp" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Movimientos pendulares:</h3>
+                <p id="infcub10">Movimientos pendulares: Inclínate hacia adelante y permite que el brazo lesionado
+                    cuelgue
+                    hacia abajo. Luego,
+                    realiza movimientos
+                    suaves y circulares con el brazo lesionado. Esto puede ayudar a mejorar la movilidad del hombro.</p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=-4F_yQbYVn4&ab_channel=FisioOnline"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub10">Escuchar texto</button>
+                    <button type="submit" class="btPausecub10">Pausar</button>
+                    <button type="submit" class="btReanudarcub10">Reanudar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal9">
+        <div class="container-modal9">
+            <div class="content-modal">
+                <h2>Ejercicios de pronación y supinación</h2>
+                <p>Otros ejercicios que puedes implementar son los siguientes:</p>
+                <ul>
+                    <li>Los ejercicios de pronación y supinación implican rotar el cúbito para mejorar la capacidad de
+                        girar
+                        la palma hacia arriba (supinación) o hacia abajo (pronación).</li>
+                    <li>Estos ejercicios ayudan a mantener la movilidad y la fuerza en el cúbito, lo que es esencial
+                        para
+                        actividades cotidianas como girar una llave o abrir una puerta.</li>
+                </ul>
+
+                <div class="btn-cerrar"><label for="btn-modal9">Cerrar</label></div>
+            </div>
+            <label for="btn-modal9" class="cerrar-modal"></label>
+        </div>
+        <!-- Fin tarjeta 4 -->
+        <!-- TARJETA 5 -->
+        <div class="tarjeta tarjeta10">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/hum5.avif" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Ejercicios de isometría:</h3>
+                <p id="infcub11">Ejercicios de isometría: Puedes realizar ejercicios isométricos para fortalecer los
+                    músculos del hombro sin mover la
+                    articulación.
+                    Un ejemplo sería presionar la mano lesionada contra una pared o una superficie resistente durante
+                    unos
+                    segundos y luego relajar.</p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=HXdghn5wDB4&ab_channel=FisioterapiaVdC"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub11">Escuchar texto</button>
+                    <button type="submit" class="btPausecub11">Pausar</button>
+                    <button type="submit" class="btReanudarcub11">Reanudar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal10">
+        <div class="container-modal10">
+            <div class="content-modal">
+                <h2>Terapia de ultrasonido y compresión fria/calor</h2>
+                <p>Otras terapias que puedes implementar son:</p>
+                <ul>
+                    <li>La terapia de ultrasonido utiliza ondas sonoras de alta frecuencia para generar calor en los
+                        tejidos
+                        profundos, lo que puede aumentar la circulación sanguínea y reducir la inflamación.</li>
+                    <li>La compresión fría/calor implica la aplicación de hielo o calor en la zona afectada. El hielo se
+                        utiliza para reducir la inflamación, mientras que el calor puede relajar los músculos y mejorar
+                        la
+                        circulación.</li>
+                    <li>Estas terapias son complementarias a otros tratamientos y pueden ser recomendadas por un
+                        fisioterapeuta según las necesidades individuales del paciente.</li>
+                </ul>
+
+                <div class="btn-cerrar"><label for="btn-modal10">Cerrar</label></div>
+            </div>
+            <label for="btn-modal10" class="cerrar-modal"></label>
+        </div>
+
+        <!-- Fin tarjeta 5 -->
+    </section>
+    <section class="Radio">
+        <!-- Inicio de radio -->
+        <section class="tituloCubito">
+            <h2>Radio</h2>
+            <p id="infcub12">El radio es uno de los dos huesos del antebrazo, el otro es el cúbito. Estos dos huesos se
+                extienden desde el codo hasta la muñeca y son esenciales para la función del brazo y la mano.
+                <br>
+                <br>
+                El radio se encuentra en la parte lateral o externa del antebrazo, mientras que el cúbito se encuentra
+                en la
+                parte medial o interna del antebrazo. Estos dos huesos son responsables de permitir que el brazo realice
+                movimientos de flexión, extensión y rotación, lo que es esencial para actividades cotidianas como
+                agarrar
+                objetos, doblar y enderezar el codo, y realizar giros con la mano y la muñeca.
+                <br>
+                <br>
+                El radio es el hueso más grande de los dos y se extiende desde el codo hasta la muñeca en el lado del
+                pulgar
+                del brazo. También forma parte de la articulación del codo junto con el húmero (el hueso del brazo
+                superior)
+                y el cúbito. El radio y el cúbito trabajan juntos para permitir una amplia gama de movimientos en el
+                brazo y
+                la mano.
+            </p>
+            <div class="contenedorBotones">
+                <button type="submit" class="btninfoCub12">Escuchar texto</button>
+                <button type="submit" class="btPausecub12">Pausar</button>
+                <button type="submit" class="btReanudarcub12">Reanudar</button>
+            </div>
+        </section>
+        <div class="tarjeta tarjeta11">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/radio1.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Movilización pasiva del radio:</h3>
+                <p id="infcub13">Un fisioterapeuta puede realizar movilizaciones pasivas para restaurar la movilidad
+                    articular del radio. Esto es especialmente útil en casos de rigidez o lesiones articulares en el
+                    codo o
+                    la muñeca.
+                </p>
+
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=NO6qrCfeYxg&t=16s&ab_channel=PHYSIOCIENCIA"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub13">Escuchar texto</button>
+                    <button type="submit" class="btPausecub13">Pausar</button>
+                    <button type="submit" class="btReanudarcub13">Reanudar</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal11">
+        <div class="container-modal11">
+            <div class="content-modal">
+                <h2>Movilización pasiva del radio:</h2>
+
+                <ul>
+                    <li><span>Rotación Prono-Supino:</span>
+                        El terapeuta sostiene el antebrazo del paciente y realiza movimientos de rotación alternados,
+                        llevando la mano hacia adentro (pronación) y hacia afuera (supinación).
+                    </li>
+                    <li><span>Flexión y Extensión del Codo con Soporte:</span>
+                        Con el codo apoyado en una superficie y bajo la supervisión del terapeuta, se realizan
+                        movimientos
+                        pasivos de flexión y extensión del codo para trabajar la movilidad del radio.
+                        Movimientos de Flexión y Extensión de Muñeca Asistidos:
+                    </li>
+                    <li><span>Movimientos Circulares del Codo y la Muñeca:</span>
+                        Bajo supervisión, se realizan movimientos circulares suaves del codo y la muñeca para trabajar
+                        la
+                        movilidad del radio en diversas direcciones.
+                    </li>
+                </ul>
+                <!-- Lista sin numeros -->
+
+
+                <div class="btn-cerrar"><label for="btn-modal11">Cerrar</label></div>
+            </div>
+            <label for="btn-modal11" class="cerrar-modal"></label>
+        </div>
+        <!-- Fin tarjeta 1 -->
+
+        <!-- TARJETA 2 -->
+        <!-- Fin de ventana modal -->
+        <div class="tarjeta tarjeta12">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/radio2.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Estiramientos del radio:</h3>
+                <p id="infcub14">Para mejorar la flexibilidad del radio, puedes realizar estiramientos suaves. Un
+                    ejemplo es
+                    el estiramiento de muñeca, donde flexionas y extiendes la muñeca en diferentes direcciones.
+                </p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=tHW7gvBTc9M&ab_channel=FisioDual.FisioterapiayOsteopat%C3%ADa."
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub14">Escuchar texto</button>
+                    <button type="submit" class="btPausecub14">Pausar</button>
+                    <button type="submit" class="btReanudarcub14">Reanudar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal Fortalecimiento muscular -->
+        <input type="checkbox" id="btn-modal12">
+        <div class="container-modal12">
+            <div class="content-modal">
+                <h2>Estiramiento del radio:</h2>
+                <p id="">Otro ejercicios que puedes implementar son:</p>
+                <ul>
+                    <li><span>Estiramiento de Prono-Supinación:</span>
+
+                        Siéntate o párate con el codo flexionado a 90 grados.
+                        Sujeta el antebrazo con la mano opuesta.
+                        Gira suavemente el antebrazo hacia adentro (pronación) y luego hacia afuera (supinación) para
+                        estirar los músculos alrededor del radio.</li>
+                    <li><span>Estiramiento de Flexión de Muñeca:</span>
+
+                        Extiende el brazo frente a ti con la palma hacia abajo.
+                        Con la mano opuesta, aplica una suave presión hacia abajo en los dedos para estirar los músculos
+                        de
+                        la muñeca y del radio.</li>
+                    <li><span>Estiramiento de Extensión de Muñeca:</span>
+
+                        Extiende el brazo frente a ti con la palma hacia arriba.
+                        Con la mano opuesta, aplica una suave presión hacia arriba en los dedos para estirar los
+                        músculos
+                        extensores de la muñeca y del radio.</li>
+                </ul>
+                <div class="btn-cerrar"><label for="btn-modal12">Cerrar</label></div>
+            </div>
+            <label for="btn-modal12" class="cerrar-modal"></label>
+        </div>
+        <!-- Fin tarjeta 2 -->
+        <!-- TARJETA 3 -->
+        <!-- Fin de ventana modal -->
+        <div class="tarjeta tarjeta13">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/radio3.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Fortalecimiento de los músculos del radio:</h3>
+                <p id="infcub15">Ejercicios de fortalecimiento de los músculos del antebrazo pueden incluir ejercicios
+                    de
+                    extensión de muñeca y ejercicios de flexión de muñeca. Usar una banda elástica o pesas ligeras para
+                    realizar estos ejercicios puede ayudar a fortalecer los músculos del radio.
+                </p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=aINAKoOOeuI&ab_channel=FisioDual.FisioterapiayOsteopat%C3%ADa."
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub15">Escuchar texto</button>
+                    <button type="submit" class="btPausecub15">Pausar</button>
+                    <button type="submit" class="btReanudarcub15">Reanudar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal13">
+        <div class="container-modal13">
+            <div class="content-modal">
+                <h2>Terapia manual:</h2>
+                <p>Otras terapias manuales que puedes implementar son:</p>
+                <ul>
+                    <li><span>Supinación y Pronación Resistida:</span>
+
+                        Siéntate con el codo apoyado en la pierna y el antebrazo extendido hacia adelante.
+                        Sujeta un objeto ligero (como un rodillo de papel) en la mano.
+                        Realiza movimientos controlados de pronación (girar la palma hacia abajo) y supinación (girar la
+                        palma hacia arriba) contra resistencia.
+                    </li>
+                    <li><span>Flexión y Extensión del Codo con Pesas:</span>
+                        Sujeta una pesa ligera en la mano y realiza movimientos de flexión y extensión del codo.
+                        Asegúrate de mantener el codo apoyado y realiza los movimientos de manera controlada.
+                    </li>
+                    <li><span>Ejercicio de Rotación de Muñeca con Banda Elástica:</span>
+
+                        Sujeta una banda elástica en una superficie fija y enrolla la banda alrededor de la mano.
+                        Realiza movimientos de rotación pronación y supinación contra la resistencia de la banda.
+                    </li>
+                </ul>
+
+                <div class="btn-cerrar"><label for="btn-modal13">Cerrar</label></div>
+            </div>
+            <label for="btn-modal13" class="cerrar-modal"></label>
+        </div>
+        <!-- Fin tarjeta 3 -->
+        <!-- TARJETA 4 -->
+        <div class="tarjeta tarjeta14">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/radio4.png" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Ejercicios de pronación y supinación:</h3>
+                <p id="infcub16">Estos ejercicios ayudan a mejorar la capacidad de girar el radio. Un ejercicio de
+                    pronación
+                    implica girar la palma de la mano hacia abajo, mientras que un ejercicio de supinación implica girar
+                    la
+                    palma hacia arriba.</p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=bCCnbKQkikg&ab_channel=FisiotherapyMadrid"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub16">Escuchar texto</button>
+                    <button type="submit" class="btPausecub16">Pausar</button>
+                    <button type="submit" class="btReanudarcub16">Reanudar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal14">
+        <div class="container-modal14">
+            <div class="content-modal">
+                <h2>Ejercicios de pronación y supinación</h2>
+                <p>Otros ejercicios que puedes implementar son los siguientes:</p>
+                <ul>
+                    <li><span>Pronación y Supinación Activa con Pesas:</span>
+
+                        Siéntate con el codo apoyado en la rodilla o en una mesa.
+                        Sujeta una pesa ligera en la mano.
+                        Realiza movimientos controlados de pronación (girar la palma hacia abajo) y supinación (girar la
+                        palma hacia arriba) con la pesa.
+                    </li>
+                    <li><span>Pronación y Supinación Activa con Tubo de Resistencia:</span>
+
+                        Fija un tubo de resistencia a una superficie fija.
+                        Sujeta el extremo del tubo con la mano y realiza movimientos de pronación y supinación contra la
+                        resistencia del tubo.</li>
+                    <li><span>Rotación de Muñeca con Barra:</span>
+
+                        Sujeta una barra o un bastón con ambas manos.
+                        Gira la barra en un movimiento de pronación y supinación, manteniendo los codos pegados al
+                        cuerpo.
+                    </li>
+
+                </ul>
+
+                <div class="btn-cerrar"><label for="btn-modal14">Cerrar</label></div>
+            </div>
+            <label for="btn-modal14" class="cerrar-modal"></label>
+        </div>
+        <!-- Fin tarjeta 4 -->
+        <!-- TARJETA 5 -->
+        <div class="tarjeta tarjeta15">
+            <!-- Imagen a la izquierda -->
+            <div class="imagen">
+                <img src="img/radio5.jpg" alt="Imagen de ejemplo">
+            </div>
+            <!-- Resumen a la derecha -->
+            <div class="resumen">
+                <h3>Ejercicios funcionales:</h3>
+                <p id="infcub17">Una vez que hayas recuperado cierta fuerza y movilidad en el radio, es importante
+                    realizar
+                    ejercicios funcionales que imiten las actividades diarias. Esto puede incluir actividades como
+                    agarrar
+                    objetos, abrir y cerrar puertas, o girar objetos con la mano.</p>
+                <!-- Botón de apertura de modal -->
+                <div class="contenedorBotones">
+                    <div class="boton-modal">
+                        <label for="btn-modal1" class="video">
+                            <a href="https://www.youtube.com/watch?v=eErZy1FCSPM&ab_channel=FisioterapiayTerapiaOcupacional"
+                                target="_blank">Saber más...</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btninfoCub17">Escuchar texto</button>
+                    <button type="submit" class="btPausecub17">Pausar</button>
+                    <button type="submit" class="btReanudarcub17">Reanudar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ventana modal -->
+        <input type="checkbox" id="btn-modal15">
+        <div class="container-modal15">
+            <div class="content-modal">
+                <h2>Ejercicios funcionales:</h2>
+                <p>Otras terapias que puedes implementar son:</p>
+                <ul>
+                    <li><span>Levantamiento de Bolsas de Compras:</span>
+                        Sujeta una bolsa de compras en cada mano y realiza movimientos de pronación y supinación
+                        mientras
+                        sostienes las bolsas.
+                    </li>
+                    <li><span>Abrir y Cerrar Puertas:</span>
+                        Practica abrir y cerrar puertas con ambas manos, prestando atención a la rotación del antebrazo
+                        durante el movimiento.
+                    </li>
+                    <li><span>Actividades de Cocina:</span>Utiliza utensilios de cocina y realiza tareas como revolver,
+                        cortar y batir para mejorar la
+                        pronación y supinación.</li>
+                    <li><span>Actividades de Jardinería:</span>Al sostener herramientas de jardinería, como palas o
+                        rastrillos, realiza movimientos que impliquen
+                        la rotación del antebrazo.</li>
+                </ul>
+
+                <div class="btn-cerrar"><label for="btn-modal15">Cerrar</label></div>
+            </div>
+            <label for="btn-modal15" class="cerrar-modal"></label>
         </div>
     </section>
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/hum1.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Movilización pasiva del hombro:</h3>
-            <p id="infcub7">Este ejercicio se realiza con la ayuda de un fisioterapeuta. Consiste en mover suavemente el
-                brazo y el
-                hombro lesionados a través de su rango de movimiento completo. Esto ayuda a prevenir la rigidez y
-                mejorar la flexibilidad de la articulación del hombro.
-            </p>
 
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal6">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub7">Escuchar texto</button>
-                <button type="submit" class="btPausecub7">Pausar</button>
-                <button type="submit" class="btReanudarcub7">Reanudar</button>
-            </div>
-
-        </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal6">
-    <div class="container-modal6">
-        <div class="content-modal">
-            <h2>Movilización pasiva y estiramientos:</h2>
-
-            <ul>
-                <li><span>Movilización pasiva del hombro:</span>Además de la movilización pasiva, tu fisioterapeuta
-                    puede utilizar técnicas manuales como estiramientos, movilizaciones articulares y técnicas de tejido
-                    blando para mejorar la movilidad del hombro. Estas técnicas ayudan a reducir la rigidez y el dolor
-                    en la articulación.</li>
-            </ul>
-            <!-- Lista sin numeros -->
-
-
-            <div class="btn-cerrar"><label for="btn-modal6">Cerrar</label></div>
-        </div>
-        <label for="btn-modal6" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 1 -->
-
-    <!-- TARJETA 2 -->
-    <!-- Fin de ventana modal -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/hum2.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Estiramientos: </h3>
-            <p id="infcub8">Estiramiento del deltoides: Para estirar el músculo deltoides, puedes extender el brazo no
-                lesionado y
-                utilizar la mano sana para tirar suavemente del brazo lesionado hacia el lado opuesto.
-                <br>
-                Estiramiento del tríceps: Para estirar el tríceps, dobla el brazo lesionado por encima de la cabeza y
-                use la mano sana para aplicar una suave presión en el codo.
-            </p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal7">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub8">Escuchar texto</button>
-                <button type="submit" class="btPausecub8">Pausar</button>
-                <button type="submit" class="btReanudarcub8">Reanudar</button>
-            </div>
-        </div>
-    </div>
-    <!-- Ventana modal Fortalecimiento muscular -->
-    <input type="checkbox" id="btn-modal7">
-    <div class="container-modal7">
-        <div class="content-modal">
-            <h2>Estiramiento:</h2>
-            <p id="">Otro ejercicios que puedes implementar son:</p>
-            <ul>
-                <li>Los ejercicios de fortalecimiento para el cúbito incluyen movimientos que trabajan los músculos
-                    flexores y extensores del antebrazo y el codo.</li>
-
-                <li>Ejemplos de ejercicios incluyen la flexión de muñeca (trabajo de los flexores) y la extensión de
-                    muñeca (trabajo de los extensores).</li>
-                <li>El fortalecimiento muscular es esencial para recuperar la fuerza en el cúbito después de una lesión
-                    o para prevenir futuras lesiones.</li>
-            </ul>
-            <div class="btn-cerrar"><label for="btn-modal7">Cerrar</label></div>
-        </div>
-        <label for="btn-modal7" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 2 -->
-    <!-- TARJETA 3 -->
-    <!-- Fin de ventana modal -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/hum3.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Fortalecimiento:</h3>
-            <p id="infcub9">Fortalecimiento: Elevaciones laterales con banda elástica: Ata una banda elástica a un punto
-                fijo y sostén
-                el extremo con
-                la mano lesionada. Luego, realiza elevaciones laterales del brazo.
-                <br>
-                Elevaciones frontales con pesas ligeras: Utiliza pesas ligeras para realizar elevaciones frontales del
-                brazo. Esto ayudará a fortalecer los músculos del hombro.
-            </p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal8">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub9">Escuchar texto</button>
-                <button type="submit" class="btPausecub9">Pausar</button>
-                <button type="submit" class="btReanudarcub9">Reanudar</button>
-            </div>
-        </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal8">
-    <div class="container-modal8">
-        <div class="content-modal">
-            <h2>Terapia manual:</h2>
-            <p>Otras terapias manuales que puedes implementar son:</p>
-            <ul>
-                <li>La terapia manual implica el uso de las manos del fisioterapeuta para aplicar presión, masaje y
-                    técnicas de liberación miofascial en los músculos, tendones y tejidos circundantes al cúbito.</li>
-                <li>Esta terapia puede ayudar a aliviar la tensión y la rigidez, promoviendo la relajación y la
-                    circulación sanguínea en la zona afectada.</li>
-                <li>Puede ser especialmente útil en casos de dolor crónico o tensión muscular.</li>
-            </ul>
-
-            <div class="btn-cerrar"><label for="btn-modal8">Cerrar</label></div>
-        </div>
-        <label for="btn-modal8" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 3 -->
-    <!-- TARJETA 4 -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/hum4.webp" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Movimientos pendulares:</h3>
-            <p id="infcub10">Movimientos pendulares: Inclínate hacia adelante y permite que el brazo lesionado cuelgue
-                hacia abajo. Luego,
-                realiza movimientos
-                suaves y circulares con el brazo lesionado. Esto puede ayudar a mejorar la movilidad del hombro.</p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal9">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub10">Escuchar texto</button>
-                <button type="submit" class="btPausecub10">Pausar</button>
-                <button type="submit" class="btReanudarcub10">Reanudar</button>
-            </div>
-        </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal9">
-    <div class="container-modal9">
-        <div class="content-modal">
-            <h2>Ejercicios de pronación y supinación</h2>
-            <p>Otros ejercicios que puedes implementar son los siguientes:</p>
-            <ul>
-                <li>Los ejercicios de pronación y supinación implican rotar el cúbito para mejorar la capacidad de girar
-                    la palma hacia arriba (supinación) o hacia abajo (pronación).</li>
-                <li>Estos ejercicios ayudan a mantener la movilidad y la fuerza en el cúbito, lo que es esencial para
-                    actividades cotidianas como girar una llave o abrir una puerta.</li>
-            </ul>
-
-            <div class="btn-cerrar"><label for="btn-modal9">Cerrar</label></div>
-        </div>
-        <label for="btn-modal9" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 4 -->
-    <!-- TARJETA 5 -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/hum5.avif" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Ejercicios de isometría:</h3>
-            <p id="infcub11">Ejercicios de isometría: Puedes realizar ejercicios isométricos para fortalecer los
-                músculos del hombro sin mover la
-                articulación.
-                Un ejemplo sería presionar la mano lesionada contra una pared o una superficie resistente durante unos
-                segundos y luego relajar.</p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal10">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub11">Escuchar texto</button>
-                <button type="submit" class="btPausecub11">Pausar</button>
-                <button type="submit" class="btReanudarcub11">Reanudar</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal10">
-    <div class="container-modal10">
-        <div class="content-modal">
-            <h2>Terapia de ultrasonido y compresión fria/calor</h2>
-            <p>Otras terapias que puedes implementar son:</p>
-            <ul>
-                <li>La terapia de ultrasonido utiliza ondas sonoras de alta frecuencia para generar calor en los tejidos
-                    profundos, lo que puede aumentar la circulación sanguínea y reducir la inflamación.</li>
-                <li>La compresión fría/calor implica la aplicación de hielo o calor en la zona afectada. El hielo se
-                    utiliza para reducir la inflamación, mientras que el calor puede relajar los músculos y mejorar la
-                    circulación.</li>
-                <li>Estas terapias son complementarias a otros tratamientos y pueden ser recomendadas por un
-                    fisioterapeuta según las necesidades individuales del paciente.</li>
-            </ul>
-
-            <div class="btn-cerrar"><label for="btn-modal10">Cerrar</label></div>
-        </div>
-        <label for="btn-modal10" class="cerrar-modal"></label>
-    </div>
-
-    <!-- Fin tarjeta 5 -->
-
-    <!-- Inicio de radio -->
-    <section class="tituloCubito">
-        <h2>Radio</h2>
-        <p id="infcub12">El radio es uno de los dos huesos del antebrazo, el otro es el cúbito. Estos dos huesos se
-            extienden desde el codo hasta la muñeca y son esenciales para la función del brazo y la mano.
-            <br>
-            <br>
-            El radio se encuentra en la parte lateral o externa del antebrazo, mientras que el cúbito se encuentra en la
-            parte medial o interna del antebrazo. Estos dos huesos son responsables de permitir que el brazo realice
-            movimientos de flexión, extensión y rotación, lo que es esencial para actividades cotidianas como agarrar
-            objetos, doblar y enderezar el codo, y realizar giros con la mano y la muñeca.
-            <br>
-            <br>
-            El radio es el hueso más grande de los dos y se extiende desde el codo hasta la muñeca en el lado del pulgar
-            del brazo. También forma parte de la articulación del codo junto con el húmero (el hueso del brazo superior)
-            y el cúbito. El radio y el cúbito trabajan juntos para permitir una amplia gama de movimientos en el brazo y
-            la mano.
-        </p>
-        <div class="contenedorBotones">
-            <button type="submit" class="btninfoCub12">Escuchar texto</button>
-            <button type="submit" class="btPausecub12">Pausar</button>
-            <button type="submit" class="btReanudarcub12">Reanudar</button>
-        </div>
-    </section>
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/radio1.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Movilización pasiva del radio:</h3>
-            <p id="infcub13">Un fisioterapeuta puede realizar movilizaciones pasivas para restaurar la movilidad
-                articular del radio. Esto es especialmente útil en casos de rigidez o lesiones articulares en el codo o
-                la muñeca.
-            </p>
-
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal11">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub13">Escuchar texto</button>
-                <button type="submit" class="btPausecub13">Pausar</button>
-                <button type="submit" class="btReanudarcub13">Reanudar</button>
-            </div>
-
-        </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal11">
-    <div class="container-modal11">
-        <div class="content-modal">
-            <h2>Movilización pasiva y estiramientos:</h2>
-
-            <ul>
-                <li><span>Movilización pasiva del hombro:</span>Además de la movilización pasiva, tu fisioterapeuta
-                    puede utilizar técnicas manuales como estiramientos, movilizaciones articulares y técnicas de tejido
-                    blando para mejorar la movilidad del hombro. Estas técnicas ayudan a reducir la rigidez y el dolor
-                    en la articulación.</li>
-            </ul>
-            <!-- Lista sin numeros -->
-
-
-            <div class="btn-cerrar"><label for="btn-modal11">Cerrar</label></div>
-        </div>
-        <label for="btn-modal11" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 1 -->
-
-    <!-- TARJETA 2 -->
-    <!-- Fin de ventana modal -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/radio2.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Estiramientos del radio:</h3>
-            <p id="infcub14">Para mejorar la flexibilidad del radio, puedes realizar estiramientos suaves. Un ejemplo es
-                el estiramiento de muñeca, donde flexionas y extiendes la muñeca en diferentes direcciones.
-            </p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal12">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub14">Escuchar texto</button>
-                <button type="submit" class="btPausecub14">Pausar</button>
-                <button type="submit" class="btReanudarcub14">Reanudar</button>
-            </div>
-        </div>
-    </div>
-    <!-- Ventana modal Fortalecimiento muscular -->
-    <input type="checkbox" id="btn-modal12">
-    <div class="container-modal12">
-        <div class="content-modal">
-            <h2>Estiramiento:</h2>
-            <p id="">Otro ejercicios que puedes implementar son:</p>
-            <ul>
-                <li>Los ejercicios de fortalecimiento para el cúbito incluyen movimientos que trabajan los músculos
-                    flexores y extensores del antebrazo y el codo.</li>
-
-                <li>Ejemplos de ejercicios incluyen la flexión de muñeca (trabajo de los flexores) y la extensión de
-                    muñeca (trabajo de los extensores).</li>
-                <li>El fortalecimiento muscular es esencial para recuperar la fuerza en el cúbito después de una lesión
-                    o para prevenir futuras lesiones.</li>
-            </ul>
-            <div class="btn-cerrar"><label for="btn-modal12">Cerrar</label></div>
-        </div>
-        <label for="btn-modal12" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 2 -->
-    <!-- TARJETA 3 -->
-    <!-- Fin de ventana modal -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/radio3.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Fortalecimiento de los músculos del radio:</h3>
-            <p id="infcub15">Ejercicios de fortalecimiento de los músculos del antebrazo pueden incluir ejercicios de
-                extensión de muñeca y ejercicios de flexión de muñeca. Usar una banda elástica o pesas ligeras para
-                realizar estos ejercicios puede ayudar a fortalecer los músculos del radio.
-            </p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal13">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub15">Escuchar texto</button>
-                <button type="submit" class="btPausecub15">Pausar</button>
-                <button type="submit" class="btReanudarcub15">Reanudar</button>
-            </div>
-        </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal13">
-    <div class="container-modal13">
-        <div class="content-modal">
-            <h2>Terapia manual:</h2>
-            <p>Otras terapias manuales que puedes implementar son:</p>
-            <ul>
-                <li>La terapia manual implica el uso de las manos del fisioterapeuta para aplicar presión, masaje y
-                    técnicas de liberación miofascial en los músculos, tendones y tejidos circundantes al cúbito.</li>
-                <li>Esta terapia puede ayudar a aliviar la tensión y la rigidez, promoviendo la relajación y la
-                    circulación sanguínea en la zona afectada.</li>
-                <li>Puede ser especialmente útil en casos de dolor crónico o tensión muscular.</li>
-            </ul>
-
-            <div class="btn-cerrar"><label for="btn-modal13">Cerrar</label></div>
-        </div>
-        <label for="btn-modal13" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 3 -->
-    <!-- TARJETA 4 -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/radio4.png" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Ejercicios de pronación y supinación:</h3>
-            <p id="infcub16">Estos ejercicios ayudan a mejorar la capacidad de girar el radio. Un ejercicio de pronación
-                implica girar la palma de la mano hacia abajo, mientras que un ejercicio de supinación implica girar la
-                palma hacia arriba.</p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal14">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub16">Escuchar texto</button>
-                <button type="submit" class="btPausecub16">Pausar</button>
-                <button type="submit" class="btReanudarcub16">Reanudar</button>
-            </div>
-        </div>
-    </div>
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal14">
-    <div class="container-modal14">
-        <div class="content-modal">
-            <h2>Ejercicios de pronación y supinación</h2>
-            <p>Otros ejercicios que puedes implementar son los siguientes:</p>
-            <ul>
-                <li>Los ejercicios de pronación y supinación implican rotar el cúbito para mejorar la capacidad de girar
-                    la palma hacia arriba (supinación) o hacia abajo (pronación).</li>
-                <li>Estos ejercicios ayudan a mantener la movilidad y la fuerza en el cúbito, lo que es esencial para
-                    actividades cotidianas como girar una llave o abrir una puerta.</li>
-            </ul>
-
-            <div class="btn-cerrar"><label for="btn-modal14">Cerrar</label></div>
-        </div>
-        <label for="btn-modal14" class="cerrar-modal"></label>
-    </div>
-    <!-- Fin tarjeta 4 -->
-    <!-- TARJETA 5 -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/radio5.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Ejercicios funcionales:</h3>
-            <p id="infcub17">Una vez que hayas recuperado cierta fuerza y movilidad en el radio, es importante realizar
-                ejercicios funcionales que imiten las actividades diarias. Esto puede incluir actividades como agarrar
-                objetos, abrir y cerrar puertas, o girar objetos con la mano.</p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal15">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub17">Escuchar texto</button>
-                <button type="submit" class="btPausecub17">Pausar</button>
-                <button type="submit" class="btReanudarcub17">Reanudar</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal15">
-    <div class="container-modal15">
-        <div class="content-modal">
-            <h2>Terapia de ultrasonido y compresión fria/calor</h2>
-            <p>Otras terapias que puedes implementar son:</p>
-            <ul>
-                <li>La terapia de ultrasonido utiliza ondas sonoras de alta frecuencia para generar calor en los tejidos
-                    profundos, lo que puede aumentar la circulación sanguínea y reducir la inflamación.</li>
-                <li>La compresión fría/calor implica la aplicación de hielo o calor en la zona afectada. El hielo se
-                    utiliza para reducir la inflamación, mientras que el calor puede relajar los músculos y mejorar la
-                    circulación.</li>
-                <li>Estas terapias son complementarias a otros tratamientos y pueden ser recomendadas por un
-                    fisioterapeuta según las necesidades individuales del paciente.</li>
-            </ul>
-
-            <div class="btn-cerrar"><label for="btn-modal15">Cerrar</label></div>
-        </div>
-        <label for="btn-modal15" class="cerrar-modal"></label>
-    </div>
-    <!-- TARJETA 6 -->
-    <div class="tarjeta">
-        <!-- Imagen a la izquierda -->
-        <div class="imagen">
-            <img src="img/radio6.jpg" alt="Imagen de ejemplo">
-        </div>
-        <!-- Resumen a la derecha -->
-        <div class="resumen">
-            <h3>Ejercicios de coordinación y equilibrio:</h3>
-            <p id="infcub18">Estos ejercicios pueden ayudar a mejorar la coordinación y el equilibrio en la mano y el
-                antebrazo. Por ejemplo, puedes practicar escribir con movimientos de muñeca controlados o realizar
-                ejercicios de manipulación de objetos pequeños.</p>
-            <!-- Botón de apertura de modal -->
-            <div class="contenedorBotones">
-                <div class="boton-modal">
-                    <label for="btn-modal16">Saber más...</label>
-
-                </div>
-                <button type="submit" class="btninfoCub18">Escuchar texto</button>
-                <button type="submit" class="btPausecub18">Pausar</button>
-                <button type="submit" class="btReanudarcub18">Reanudar</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ventana modal -->
-    <input type="checkbox" id="btn-modal16">
-    <div class="container-modal16">
-        <div class="content-modal">
-            <h2>olis</h2>
-            <p>Otras terapias que puedes implementar son:</p>
-            <ul>
-                <li>La terapia de ultrasonido utiliza ondas sonoras de alta frecuencia para generar calor en los tejidos
-                    profundos, lo que puede aumentar la circulación sanguínea y reducir la inflamación.</li>
-                <li>La compresión fría/calor implica la aplicación de hielo o calor en la zona afectada. El hielo se
-                    utiliza para reducir la inflamación, mientras que el calor puede relajar los músculos y mejorar la
-                    circulación.</li>
-                <li>Estas terapias son complementarias a otros tratamientos y pueden ser recomendadas por un
-                    fisioterapeuta según las necesidades individuales del paciente.</li>
-            </ul>
-
-            <div class="btn-cerrar"><label for="btn-modal16">Cerrar</label></div>
-        </div>
-        <label for="btn-modal16" class="cerrar-modal"></label>
-    </div>
 
 
 
     <script src="js/brazo.js"></script>
+    <script src="js/voz.js"></script>
+    <script src="js/buscador.js"></script>
 </body>
 
 <!-- Footer -->

@@ -82,7 +82,8 @@ h2 {
     display: block;
 }
 
-.formularioSession button,.alinear-derecha button {
+.formularioSession button,
+.alinear-derecha button {
     display: block;
     width: 300px;
     height: 40px;
@@ -126,19 +127,21 @@ h2 {
 
 
 @media (max-width: 360px) {
-    .nav-bg{
-        
+    .nav-bg {
+
         flex-direction: column;
         width: 100%;
         max-width: 480px;
         margin: 0 auto;
     }
+
     .nav-container {
         flex-direction: column;
         width: 100%;
         max-width: 480px;
         margin: 0 auto;
     }
+
     .nav-container a {
         margin: 0.5rem 0;
         font-size: 1.5rem;
@@ -174,15 +177,16 @@ h2 {
     z-index: 10;
     color: var(--cuaternario-color);
 }
+
 @media (max-width: 360px) {
-    h2{
+    h2 {
         font-size: 2.5rem;
         font-weight: 700;
         flex-direction: column;
         width: 100%;
         max-width: 480px;
         margin: 0 auto;
-    } 
+    }
 
 }
 
@@ -409,6 +413,7 @@ h2 {
     border-bottom-right-radius: 1rem;
 
 }
+
 /* Contacto */
 
 .formulario {
@@ -478,7 +483,8 @@ h2 {
     padding: 1.5rem;
     border-radius: .5rem;
 }
-.campo .correo{
+
+.campo .correo {
     width: 95%;
 }
 
@@ -502,12 +508,76 @@ h2 {
     width: 100%;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
+    margin-top: 1rem;
 }
-.footer p{
+
+.footer p {
     color: var(--quinario-color);
 }
 
 /* BRAZO */
-.tituloCubito{
+.tituloCubito {
     margin-top: 5rem;
+}
+
+/* Estilo de barra de busqueda */
+.busqueda {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busqueda-container {
+    width: 50%;
+    background-color: #2d3250;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.busqueda-container form {
+    width: 100%;
+    display: flex;
+}
+.busqueda-container input {
+    width: 85%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--primario-color);
+    background-color: #424769;
+}
+
+.busqueda-container .derbtn {
+    width: 10%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--cuaternario-color);
+    background-color: var(--primario-color);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.busqueda-container button:hover{
+    background-color: var(--quinario-color);
+    
+}
+
+.derbtn img {
+    width: 2rem;
+
+}
+
+.video a{
+    text-decoration: none;
+    
 }
