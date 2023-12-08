@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Eliminar Registro
+  body
+    h1 Eliminar Registro
+    p= `¿Estás seguro de que deseas eliminar el registro con Nombre: ${datos.Nombre}, Fecha: ${datos.Fecha}, Artista: ${datos.Artista}?`
+
+    form(id="deleteForm", action=`/api/v1/delete/${datos._id}`, method="POST", onsubmit="return confirmDelete()")
+      button(type="submit") Sí, Eliminar
+
+    script.
+      function confirmDelete() {
+        return confirm("¿Estás seguro de que deseas eliminar el registro?");
+      }

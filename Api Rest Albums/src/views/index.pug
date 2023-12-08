@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Lista de albums
+  body 
+
+    h1 Albums
+    ul
+      each workout in workouts
+        li
+          h2= workout.Nombre
+          p Fecha: #{workout.Fecha}
+          p Artista: #{workout.Artista}

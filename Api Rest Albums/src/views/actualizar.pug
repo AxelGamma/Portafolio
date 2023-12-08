@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Actualizar Registro
+  body
+    h1 Actualizar Registro
+    form(action=`/api/v1/update/${datos._id}`, method="POST")
+      label(for="Nombre") Nombre
+      input(type="text", name="Nombre", placeholder="Nombre", value=datos.Nombre)
+
+      label(for="Fecha") Fecha
+      input(type="text", name="Fecha", placeholder="Fecha", value=datos.Fecha)
+
+      label(for="Artista") Artista
+      input(type="text", name="Artista", placeholder="Artista", value=datos.Artista)
+
+      button(type="submit") Actualizar
